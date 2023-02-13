@@ -1,0 +1,85 @@
+.hero-container {
+  font-family: $hero-font-family;
+  font-size: pxToRem(30px);
+  text-align: center;
+  margin-top: $spacing-64;
+  position: relative;
+  width: 370px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // border: solid 2px red;
+  
+  .hero-name {
+    position: relative;
+    margin-bottom: $spacing-08;
+    z-index: 1;
+  }
+  .hero-role {
+    position: relative;
+    z-index: 3;
+  }
+
+  .icon {
+    position: absolute;
+    display: inline-block;
+    // border: solid 2px green;
+    border-radius: 8px;
+    backdrop-filter: blur(2px);
+    
+    img {
+      width: 20px;
+      padding: 6px;
+    }
+  }
+
+  // Icon backgrounds & positioning  
+  .html-icon {
+    background: $html-bg-colour;
+    bottom: 15px;
+    left: 20px;
+    z-index: 4;
+  }
+
+  .css-icon {
+    background: $css-bg-colour;
+    bottom: -25px;
+    left: 80px;
+    z-index: 4;
+  }
+
+  .js-icon {
+    background: $js-bg-colour;
+    bottom: 10px;
+    left: 110px;
+    z-index: 2;
+  }
+
+  .sass-icon {
+    background: $sass-bg-colour;
+    bottom: -25px;
+    left: 164px;
+    z-index: 4;
+  }
+
+  .react-icon {
+    background: $react-bg-colour;
+    bottom: 10px;
+    right: 140px;
+    z-index: 2;
+  }
+
+  .figma-icon {
+    background: $figma-bg-colour;
+    bottom: -25px;
+    right: 95px;
+    z-index: 4;
+  }
+
+  .cypress-icon {
+    background: $cypress-bg-colour;
+    bottom: 10px;
+    right: 55px;
+    z-index: 2;
+  }
+}
