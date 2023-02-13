@@ -1,6 +1,6 @@
 .hero-container {
   font-family: $hero-font-family;
-  font-size: pxToRem(30px);
+  font-size: pxToRem(37px);
   text-align: center;
   margin-top: $spacing-64;
   position: relative;
@@ -14,6 +14,7 @@
     position: relative;
     margin-bottom: $spacing-08;
     z-index: 1;
+
   }
   .hero-role {
     position: relative;
@@ -21,6 +22,7 @@
   }
 
   .icon {
+    display: none;
     position: absolute;
     display: inline-block;
     // border: solid 2px green;
@@ -37,49 +39,71 @@
   .html-icon {
     background: $html-bg-colour;
     bottom: 15px;
-    left: 20px;
+    left: 0px;
     z-index: 4;
+    animation: float 4s ease-in-out 0s infinite forwards;
   }
 
   .css-icon {
     background: $css-bg-colour;
-    bottom: -25px;
-    left: 80px;
+    bottom: -28px;
+    left: 55px;
     z-index: 4;
+    animation: float 4s ease-in-out 2s infinite forwards;
   }
 
   .js-icon {
     background: $js-bg-colour;
-    bottom: 10px;
-    left: 110px;
+    bottom: 15px;
+    left: 100px;
     z-index: 2;
+    animation: float 4s ease-in-out 1s infinite forwards;
   }
 
   .sass-icon {
     background: $sass-bg-colour;
-    bottom: -25px;
-    left: 164px;
+    bottom: -28px;
+    left: 160px;
     z-index: 4;
+    animation: float 4s ease-in-out 1.5s infinite forwards;
   }
 
   .react-icon {
     background: $react-bg-colour;
-    bottom: 10px;
-    right: 140px;
+    bottom: 20px;
+    right: 135px;
     z-index: 2;
+    animation: float 4s ease-in-out 0s infinite forwards;
   }
 
   .figma-icon {
     background: $figma-bg-colour;
-    bottom: -25px;
-    right: 95px;
+    bottom: -28px;
+    right: 75px;
     z-index: 4;
+    animation: float 4s ease-in-out 0.8s infinite forwards;
   }
 
   .cypress-icon {
     background: $cypress-bg-colour;
-    bottom: 10px;
-    right: 55px;
+    bottom: 15px;
+    right: 30px;
     z-index: 2;
+    animation: float 4s ease-in-out 1.2s infinite forwards;
+  }
+}
+
+// Animations
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0px);
   }
 }
