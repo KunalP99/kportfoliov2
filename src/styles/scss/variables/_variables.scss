@@ -6,6 +6,12 @@
 $main-font-family: 'Inter', sans-serif;
 $hero-font-family: 'Michroma', sans-serif;
 
+// Font weights
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
 // Functions
 // Converts pixel to rem
 @function pxToRem($pxValue) {
