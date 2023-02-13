@@ -1,0 +1,30 @@
+@use 'sass:math';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Michroma&display=swap');
+@import "./spacing";
+
+// Fonts
+$main-font-family: 'Inter', sans-serif;
+$hero-font-family: 'Michroma', sans-serif;
+
+// Functions
+// Converts pixel to rem
+@function pxToRem($pxValue) {
+    @return math.div($pxValue, 16px) * 1rem; 
+}
+
+// Mixins 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
