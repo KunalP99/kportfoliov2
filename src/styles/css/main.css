@@ -78,6 +78,7 @@ header button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: solid 2px red;
 }
 .hero-container .hero-name {
   position: relative;
@@ -89,27 +90,28 @@ header button {
   z-index: 3;
 }
 .hero-container .icon {
-  display: none;
   position: absolute;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
+  padding: 6px;
 }
 .hero-container .icon img {
   width: 20px;
-  padding: 6px;
 }
 .hero-container .html-icon {
   background: linear-gradient(45deg, rgba(255, 218, 202, 0.19) 5.65%, rgba(241, 101, 41, 0.85) 94.35%);
-  bottom: 15px;
+  bottom: 25px;
   left: 0px;
   z-index: 4;
   animation: float 4s ease-in-out 0s infinite forwards;
 }
 .hero-container .css-icon {
   background: linear-gradient(45deg, rgba(41, 101, 241, 0.59) 5.65%, rgba(255, 255, 255, 0.2) 94.35%);
-  bottom: -28px;
+  bottom: -25px;
   left: 55px;
   z-index: 4;
   animation: float 4s ease-in-out 2s infinite forwards;
@@ -123,7 +125,7 @@ header button {
 }
 .hero-container .sass-icon {
   background: linear-gradient(45deg, rgba(205, 103, 153, 0.53) 5.65%, rgba(255, 255, 255, 0.2) 94.35%);
-  bottom: -28px;
+  bottom: -25px;
   left: 160px;
   z-index: 4;
   animation: float 4s ease-in-out 1.5s infinite forwards;
@@ -137,7 +139,7 @@ header button {
 }
 .hero-container .figma-icon {
   background: linear-gradient(44.58deg, rgba(162, 89, 255, 0.14) 7.05%, rgba(162, 89, 255, 0.61) 94.35%);
-  bottom: -28px;
+  bottom: -25px;
   right: 75px;
   z-index: 4;
   animation: float 4s ease-in-out 0.8s infinite forwards;
@@ -150,6 +152,85 @@ header button {
   animation: float 4s ease-in-out 1.2s infinite forwards;
 }
 
+@media (min-width: 500px) {
+  .hero-container {
+    font-size: 2.9375rem;
+    width: 490px;
+    margin-top: 200px;
+  }
+  .hero-container .icon {
+    padding: 8px;
+  }
+  .hero-container .icon img {
+    width: 25px;
+  }
+  .hero-container .html-icon {
+    bottom: 30px;
+  }
+  .hero-container .css-icon {
+    bottom: -30px;
+    left: 80px;
+  }
+  .hero-container .js-icon {
+    bottom: 25px;
+    left: 135px;
+  }
+  .hero-container .sass-icon {
+    bottom: -30px;
+    left: 210px;
+  }
+  .hero-container .react-icon {
+    bottom: 25px;
+    right: 175px;
+  }
+  .hero-container .figma-icon {
+    bottom: -30px;
+    right: 100px;
+  }
+  .hero-container .cypress-icon {
+    bottom: 25px;
+    right: 50px;
+  }
+}
+@media (min-width: 700px) {
+  .hero-container {
+    font-size: 4.0625rem;
+    width: 690px;
+  }
+  .hero-container .icon {
+    padding: 10px;
+  }
+  .hero-container .icon img {
+    width: 40px;
+  }
+  .hero-container .html-icon {
+    bottom: 45px;
+  }
+  .hero-container .css-icon {
+    bottom: -45px;
+    left: 115px;
+  }
+  .hero-container .js-icon {
+    bottom: 35px;
+    left: 200px;
+  }
+  .hero-container .sass-icon {
+    bottom: -45px;
+    left: 300px;
+  }
+  .hero-container .react-icon {
+    bottom: 35px;
+    right: 250px;
+  }
+  .hero-container .figma-icon {
+    bottom: -45px;
+    right: 150px;
+  }
+  .hero-container .cypress-icon {
+    bottom: 35px;
+    right: 80px;
+  }
+}
 @keyframes float {
   0% {
     transform: translateY(0px);
