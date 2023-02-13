@@ -12,6 +12,15 @@ $medium: 500;
 $semi-bold: 600;
 $bold: 700;
 
+// Colours
+$html-bg-colour: linear-gradient(45deg, rgba(255, 218, 202, 0.19) 5.65%, rgba(241, 101, 41, 0.85) 94.35%);
+$css-bg-colour: linear-gradient(45deg, rgba(41, 101, 241, 0.59) 5.65%, rgba(255, 255, 255, 0.2) 94.35%);
+$js-bg-colour: linear-gradient(45deg, rgba(222, 215, 155, 0.2) 5.65%, rgba(247, 223, 30, 0.91) 94.35%);
+$sass-bg-colour: linear-gradient(45deg, rgba(205, 103, 153, 0.53) 5.65%, rgba(255, 255, 255, 0.2) 94.35%);
+$react-bg-colour: linear-gradient(45deg, #D6D6D6 5.65%, rgba(208, 245, 255, 0.2) 94.35%);
+$figma-bg-colour: linear-gradient(44.58deg, rgba(162, 89, 255, 0.14) 7.05%, rgba(162, 89, 255, 0.61) 94.35%);
+$cypress-bg-colour: linear-gradient(45deg, #6FD3A7 5.65%, rgba(255, 255, 255, 0.2) 94.35%);
+
 // Functions
 // Converts pixel to rem
 @function pxToRem($pxValue) {
