@@ -437,19 +437,39 @@ header button {
   text-align: center;
   padding: 8px;
 }
-.games-inventory-card h2 {
-  font-weight: 700;
-  font-size: 1.5625rem;
-  margin-top: 32px;
-  margin-bottom: 16px;
-}
 .games-inventory-card .links-container .visit-website-link {
   color: #DD6031;
 }
 .games-inventory-card .links-container .github-link {
   color: #FFF;
 }
+.games-inventory-card .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.games-inventory-card .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: auto;
+}
+.games-inventory-card .swiper-slide img {
+  display: block;
+  width: 100px;
+}
+.games-inventory-card .swiper-wrapper {
+  transition-timing-function: linear;
+}
 
+@media (min-width: 700px) {
+  .games-inventory-card .swiper-slide {
+    width: 150px;
+  }
+  .games-inventory-card .swiper-slide img {
+    width: 150px;
+  }
+}
 .projects-grid-container {
   margin-top: 40px;
 }
@@ -464,4 +484,14 @@ header button {
   justify-content: center;
   gap: 24px;
   margin-top: 32px;
+}
+.projects-grid-container h2 {
+  font-weight: 700;
+  font-size: clamp(1.5625rem, 4vw, 4rem);
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.projects-grid-container p {
+  font-size: clamp(0.9375rem, 2vw, 2rem);
+  padding: 8px;
 }
