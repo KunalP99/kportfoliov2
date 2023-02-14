@@ -49,6 +49,16 @@ table {
   border-spacing: 0;
 }
 
+.container {
+  width: 1900px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1890px) {
+  .container {
+    width: auto;
+  }
+}
 header {
   padding: 16px;
   text-align: center;
@@ -63,11 +73,36 @@ header button {
   background-color: black;
   color: white;
   border-radius: 55px;
-  padding: 16px 32px;
+  padding: 16px 24px;
   font-weight: 500;
-  font-size: 1.375rem;
+  font-size: 0.9375rem;
 }
 
+@media (min-width: 700px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header img {
+    width: 65px;
+  }
+  header button {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    padding: 32px 50px;
+  }
+  header img {
+    width: 80px;
+  }
+  header button {
+    padding: 16px 32px;
+    font-size: 1.375rem;
+  }
+}
 .hero-container {
   font-family: "Michroma", sans-serif;
   font-size: 2.3125rem;
@@ -155,7 +190,6 @@ header button {
   .hero-container {
     font-size: 2.9375rem;
     width: 490px;
-    margin-top: 200px;
   }
   .hero-container .icon {
     padding: 8px;
@@ -234,6 +268,7 @@ header button {
   .hero-container {
     font-size: 6.875rem;
     width: 1190px;
+    margin-top: 150px;
   }
   .hero-container .icon {
     padding: 16px;

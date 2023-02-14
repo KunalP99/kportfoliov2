@@ -13,8 +13,38 @@ header {
     background-color: black;
     color: white;
     border-radius: 55px;
-    padding: $spacing-16 $spacing-32;
+    padding: $spacing-16 $spacing-24;
     font-weight: 500;
-    font-size: pxToRem(22px);
+    font-size: pxToRem(15px);
+  }
+}
+
+@media (min-width: 700px) {
+  header {
+    @include flex-center-vert;
+    justify-content: space-between;
+
+    img {
+      width: 65px;
+    }
+
+    button {
+      display: block;
+
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 32px 50px;
+    img {
+       width: 80px;
+    }
+
+    button {
+      padding: $spacing-16 $spacing-32;
+      font-size: pxToRem(22px);
+    }
   }
 }
