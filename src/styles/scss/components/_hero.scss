@@ -8,7 +8,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: solid 2px red;
   
   .hero-name {
     position: relative;
@@ -24,10 +23,9 @@
   .icon {
     position: absolute;
     @include flex-center;
-    border-radius: 8px;
+    border-radius: 25px;
     backdrop-filter: blur(2px);
     padding: 6px;
-    
     img {
       width: 20px;
     }
@@ -146,7 +144,6 @@
     font-size: pxToRem(65px);
     width: 690px;
 
-    // Icon positioning at 700px
     .icon {
       padding: 10px;
       img {
@@ -154,6 +151,7 @@
       }
     }
 
+    // Icon positioning at 700px
     .html-icon {
       bottom: 45px;
     }
@@ -186,6 +184,104 @@
     .cypress-icon {
       bottom: 35px;
       right: 80px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-container {
+    font-size: pxToRem(110px);
+    width: 1190px;
+
+    .icon {
+      padding: 16px;
+      img {
+        width: 60px;
+      }
+    }
+
+    // Icon positioning at 1200px
+    .html-icon {
+      bottom: 65px;
+    }
+
+    .css-icon {
+      bottom: -70px;
+      left: 210px
+    }
+
+    .js-icon {
+      bottom: 55px;
+      left: 340px;
+    }
+
+    .sass-icon {
+      bottom: -70px;
+      left: 520px;
+    }
+
+    .react-icon {
+      bottom: 55px;
+      right: 440px;
+    }
+
+    .figma-icon {
+      bottom: -70px;
+      right: 270px;
+    }
+
+    .cypress-icon {
+      bottom: 55px;
+      right: 150px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero-container {
+    font-size: pxToRem(140px);
+    width: 1590px;
+    .icon {
+      padding: 22px;
+      img {
+        width: 74px;
+      }
+    }
+
+    // Icon positioning at 1600px
+    .html-icon {
+      bottom: 80px;
+      left: 40px;
+    }
+
+    .css-icon {
+      bottom: -90px;
+      left: 290px;
+    }
+
+    .js-icon {
+      bottom: 80px;
+      left: 470px;
+    }
+
+    .sass-icon {
+      bottom: -90px;
+      left: 690px;
+    }
+
+    .react-icon {
+      bottom: 80px;
+      right: 610px;
+    }
+
+    .figma-icon {
+      bottom: -90px;
+      right: 380px;
+    }
+
+    .cypress-icon {
+      bottom: 80px;
+      right: 210px;
     }
   }
 }

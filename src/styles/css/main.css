@@ -78,7 +78,6 @@ header button {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border: solid 2px red;
 }
 .hero-container .hero-name {
   position: relative;
@@ -94,7 +93,7 @@ header button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 25px;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   padding: 6px;
@@ -229,6 +228,85 @@ header button {
   .hero-container .cypress-icon {
     bottom: 35px;
     right: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .hero-container {
+    font-size: 6.875rem;
+    width: 1190px;
+  }
+  .hero-container .icon {
+    padding: 16px;
+  }
+  .hero-container .icon img {
+    width: 60px;
+  }
+  .hero-container .html-icon {
+    bottom: 65px;
+  }
+  .hero-container .css-icon {
+    bottom: -70px;
+    left: 210px;
+  }
+  .hero-container .js-icon {
+    bottom: 55px;
+    left: 340px;
+  }
+  .hero-container .sass-icon {
+    bottom: -70px;
+    left: 520px;
+  }
+  .hero-container .react-icon {
+    bottom: 55px;
+    right: 440px;
+  }
+  .hero-container .figma-icon {
+    bottom: -70px;
+    right: 270px;
+  }
+  .hero-container .cypress-icon {
+    bottom: 55px;
+    right: 150px;
+  }
+}
+@media (min-width: 1600px) {
+  .hero-container {
+    font-size: 8.75rem;
+    width: 1590px;
+  }
+  .hero-container .icon {
+    padding: 22px;
+  }
+  .hero-container .icon img {
+    width: 74px;
+  }
+  .hero-container .html-icon {
+    bottom: 80px;
+    left: 40px;
+  }
+  .hero-container .css-icon {
+    bottom: -90px;
+    left: 290px;
+  }
+  .hero-container .js-icon {
+    bottom: 80px;
+    left: 470px;
+  }
+  .hero-container .sass-icon {
+    bottom: -90px;
+    left: 690px;
+  }
+  .hero-container .react-icon {
+    bottom: 80px;
+    right: 610px;
+  }
+  .hero-container .figma-icon {
+    bottom: -90px;
+    right: 380px;
+  }
+  .hero-container .cypress-icon {
+    bottom: 80px;
+    right: 210px;
   }
 }
 @keyframes float {
