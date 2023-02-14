@@ -1,10 +1,10 @@
 import HtmlIcon from '../images/hero/html-icon.png';
-import CssIcon from "../images/hero/css-icon.png";
-import JsIcon from "../images/hero/js-icon.png";
-import SassIcon from "../images/hero/sass-icon.png";
-import ReactIcon from "../images/hero/react-icon.png";
-import FigmaIcon from "../images/hero/figma-icon.png";
-import CypressIcon from "../images/hero/cypress-icon.png";
+import CssIcon from '../images/hero/css-icon.png';
+import JsIcon from '../images/hero/js-icon.png';
+import SassIcon from '../images/hero/sass-icon.png';
+import ReactIcon from '../images/hero/react-icon.png';
+import FigmaIcon from '../images/hero/figma-icon.png';
+import CypressIcon from '../images/hero/cypress-icon.png';
 
 const Hero = () => {
   return (

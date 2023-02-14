@@ -1,12 +1,12 @@
-import Logo from "../images/logo.png";
+import Logo from '../images/logo.png';
 
 const Header = () => {
-	return (
-		<header>
+  return (
+    <header>
       <img src={Logo} alt="Logo for kportfolio" />
       <button>Say Hello 👋</button>
-		</header>
-	);
+    </header>
+  );
 };
 
 export default Header;
