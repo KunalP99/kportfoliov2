@@ -1,11 +1,61 @@
 .container {
-  width: 1900px;
+  width: 1903px;
   margin: 0 auto;
+
+  .content {
+    font-family: $main-font-family;
+    background-color: #F9F8F8;
+    margin-top: 50px;
+    width: 100%;
+
+    .quote {
+      text-align: center;
+      padding: $spacing-40;
+      font-weight: $regular;
+      span {
+        color: #6BA6FF
+      }
+    }
+  }
 }
+
 
 @media (max-width: 1890px) {
   .container {
     width: auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    .content {
+      .quote {
+        padding: $spacing-40 $spacing-112;
+        font-size: pxToRem(25px)
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    .content {
+      .quote {
+        padding: $spacing-40 150px;
+        font-size: pxToRem(35px);
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    .content {
+      .quote {
+        padding: $spacing-120 250px;
+        font-size: pxToRem(42px);
+      }
+    }
   }
 }
 

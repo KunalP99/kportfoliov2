@@ -50,13 +50,45 @@ table {
 }
 
 .container {
-  width: 1900px;
+  width: 1903px;
   margin: 0 auto;
+}
+.container .content {
+  font-family: "Inter", sans-serif;
+  background-color: #F9F8F8;
+  margin-top: 50px;
+  width: 100%;
+}
+.container .content .quote {
+  text-align: center;
+  padding: 40px;
+  font-weight: 400;
+}
+.container .content .quote span {
+  color: #6BA6FF;
 }
 
 @media (max-width: 1890px) {
   .container {
     width: auto;
+  }
+}
+@media (min-width: 700px) {
+  .container .content .quote {
+    padding: 40px 112px;
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 1200px) {
+  .container .content .quote {
+    padding: 40px 150px;
+    font-size: 2.1875rem;
+  }
+}
+@media (min-width: 1600px) {
+  .container .content .quote {
+    padding: 120px 250px;
+    font-size: 2.625rem;
   }
 }
 header {
