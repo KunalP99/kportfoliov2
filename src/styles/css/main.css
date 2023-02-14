@@ -431,3 +431,10 @@ header button {
     transform: translateY(0px);
   }
 }
+.projects-grid-container {
+  margin-top: 40px;
+}
+.projects-grid-container .games-inventory-card {
+  background: #000000;
+  color: white;
+}
