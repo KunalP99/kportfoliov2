@@ -1,8 +1,17 @@
+@import '../components/projects/gamesinventory';
+
 .projects-grid-container {
   margin-top: $spacing-40;
 
-  .games-inventory-card {
-    background: #000000;
-    color: white;
+  a {
+    text-decoration: none;
+    @include flex-center-vert;
+    gap: $spacing-08;
+  }
+
+  .links-container {
+    @include flex-center-horiz;
+    gap: $spacing-24;
+    margin-top: $spacing-32;
   }
 }

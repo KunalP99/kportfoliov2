@@ -1,0 +1,22 @@
+  .games-inventory-card {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: $spacing-08;
+
+    h2 {
+      font-weight: $bold;
+      font-size: pxToRem(25px);
+      margin-top: $spacing-32;
+      margin-bottom: $spacing-16;
+    }
+
+    .links-container {
+      .visit-website-link {
+        color: #DD6031;
+      }
+      .github-link {
+        color: #FFF;
+      }
+    }
+  }
