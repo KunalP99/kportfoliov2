@@ -104,7 +104,6 @@ header button {
   }
 }
 .hero-container {
-  font-family: "Michroma", sans-serif;
   font-size: 2.3125rem;
   text-align: center;
   margin-top: 64px;
@@ -113,6 +112,9 @@ header button {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.hero-container .hero-name, .hero-container .hero-role {
+  font-family: "Michroma", sans-serif;
 }
 .hero-container .hero-name {
   position: relative;
@@ -184,6 +186,19 @@ header button {
   right: 30px;
   z-index: 2;
   animation: float 4s ease-in-out 1.2s infinite forwards;
+}
+
+.hero-recent-work-container {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  text-align: center;
+  margin-top: 120px;
+}
+.hero-recent-work-container img {
+  width: 30px;
+  margin-top: 16px;
+  cursor: pointer;
 }
 
 @media (min-width: 500px) {
@@ -302,6 +317,13 @@ header button {
   .hero-container .cypress-icon {
     bottom: 55px;
     right: 150px;
+  }
+  .hero-recent-work-container {
+    font-size: 2rem;
+    margin-top: 200px;
+  }
+  .hero-recent-work-container img {
+    width: 50px;
   }
 }
 @media (min-width: 1600px) {
