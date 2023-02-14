@@ -130,7 +130,7 @@ header button {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
+  border-radius: 8px;
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   padding: 6px;
@@ -208,6 +208,7 @@ header button {
   }
   .hero-container .icon {
     padding: 8px;
+    border-radius: 9px;
   }
   .hero-container .icon img {
     width: 25px;
@@ -247,6 +248,7 @@ header button {
   }
   .hero-container .icon {
     padding: 10px;
+    border-radius: 13px;
   }
   .hero-container .icon img {
     width: 40px;
@@ -287,6 +289,7 @@ header button {
   }
   .hero-container .icon {
     padding: 16px;
+    border-radius: 20px;
   }
   .hero-container .icon img {
     width: 60px;
@@ -333,6 +336,7 @@ header button {
   }
   .hero-container .icon {
     padding: 22px;
+    border-radius: 25px;
   }
   .hero-container .icon img {
     width: 74px;
@@ -371,7 +375,7 @@ header button {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(3px);
+    transform: translateY(10px);
   }
   100% {
     transform: translateY(0px);
