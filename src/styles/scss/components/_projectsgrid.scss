@@ -24,6 +24,6 @@
  
   p {
     font-size: clamp(pxToRem(15px), 2vw, pxToRem(32px));
-    padding: $spacing-08;
+    padding: 0px $spacing-40;
   }
 }
