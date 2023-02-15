@@ -1,10 +1,11 @@
 import GamesInventory from './projects/GamesInventory';
+import Hoodies from './projects/Hoodies';
 
 const ProjectsGrid = () => {
   return (
     <div className="projects-grid-container">
       <GamesInventory />
-      <div className="hoodies-card"></div>
+      <Hoodies />
       <div className="weather-card"></div>
       <div className="on1-card"></div>
     </div>

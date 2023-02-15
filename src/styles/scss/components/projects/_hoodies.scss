@@ -1,0 +1,21 @@
+.hoodies-card {
+  background: #282828;
+  color: white;
+  padding-top: $spacing-08;
+
+  .links-container {
+    .visit-website-link {
+      color: #ADA6A6;
+    }
+    .github-link {
+      color: #FFF;
+    }
+  }
+
+  .hoodies-img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    padding-top: $spacing-08;
+  }
+}

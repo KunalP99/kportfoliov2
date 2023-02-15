@@ -1,4 +1,5 @@
 @import '../components/projects/gamesinventory';
+@import "../components/projects/hoodies";
 
 .projects-grid-container {
   margin-top: $spacing-40;
@@ -25,5 +26,9 @@
   p {
     font-size: clamp(pxToRem(15px), 2vw, pxToRem(32px));
     padding: 0px $spacing-40;
+  }
+
+  h2, p {
+    text-align: center;
   }
 }

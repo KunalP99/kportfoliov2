@@ -438,7 +438,6 @@ header button {
 .games-inventory-card {
   background: #000000;
   color: white;
-  text-align: center;
   padding: 8px;
 }
 .games-inventory-card .links-container .visit-website-link {
@@ -474,6 +473,24 @@ header button {
     width: 150px;
   }
 }
+.hoodies-card {
+  background: #282828;
+  color: white;
+  padding-top: 8px;
+}
+.hoodies-card .links-container .visit-website-link {
+  color: #ADA6A6;
+}
+.hoodies-card .links-container .github-link {
+  color: #FFF;
+}
+.hoodies-card .hoodies-img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  padding-top: 8px;
+}
+
 .projects-grid-container {
   margin-top: 40px;
 }
@@ -498,4 +515,7 @@ header button {
 .projects-grid-container p {
   font-size: clamp(0.9375rem, 2vw, 2rem);
   padding: 0px 40px;
+}
+.projects-grid-container h2, .projects-grid-container p {
+  text-align: center;
 }
