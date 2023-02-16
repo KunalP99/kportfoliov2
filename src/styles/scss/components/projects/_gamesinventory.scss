@@ -2,7 +2,6 @@
   background: #000000;
   color: white;
   padding: $spacing-08;
-  // max-width: 920px;
   
   .links-container {
     .visit-website-link {
@@ -48,5 +47,11 @@
     .swiper-slide img {
       width: 150px;
     }
+  }
+}
+
+@media (min-width: 1000px) {
+  .games-inventory-card {
+
   }
 }

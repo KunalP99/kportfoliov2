@@ -2,7 +2,10 @@
 @import "../components/projects/hoodies";
 
 .projects-grid-container {
+  display: flex;
+  flex-direction: column;
   margin-top: $spacing-40;
+  justify-content: center;
 
   a {
     text-decoration: none;
@@ -30,5 +33,21 @@
 
   h2, p {
     text-align: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .projects-grid-container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    gap: $spacing-08;
+
+  }
+}
+
+@media (min-width: 1900px) {
+  .projects-grid-container {
+    grid-template-columns: 940px 940px;
+    grid-template-rows: 800px 800px
   }
 }

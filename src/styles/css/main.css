@@ -492,7 +492,10 @@ header button {
 }
 
 .projects-grid-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 40px;
+  justify-content: center;
 }
 .projects-grid-container a {
   text-decoration: none;
@@ -518,4 +521,18 @@ header button {
 }
 .projects-grid-container h2, .projects-grid-container p {
   text-align: center;
+}
+
+@media (min-width: 1000px) {
+  .projects-grid-container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    gap: 8px;
+  }
+}
+@media (min-width: 1900px) {
+  .projects-grid-container {
+    grid-template-columns: 940px 940px;
+    grid-template-rows: 800px 800px;
+  }
 }
