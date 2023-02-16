@@ -52,6 +52,28 @@
 
 @media (min-width: 1000px) {
   .games-inventory-card {
+    .swiper-slide img {
+      width: 100px;
+    }
+  }
+}
 
+@media (min-width: 1600px) {
+  .games-inventory-card {
+    .swiper {
+      padding-top: 85px;
+    }
+
+    .swiper-slide img {
+      width: 140px;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .games-inventory-card {
+    .swiper-slide img {
+      width: 200px;
+    }
   }
 }

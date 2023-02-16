@@ -37,13 +37,14 @@ const GamesInventory = () => {
           500: {
             slidesPerView: 4
           },
-          800: {
-            slidesPerView: 5
-          }
+          1000: {
+            slidersPerView: 3
+          },
         }}
         autoplay={{
           delay: 1,
           reverseDirection: false,
+          disableOnInteraction: false
         }}
         modules={[Autoplay]}
         className="mySwiper"

@@ -473,10 +473,29 @@ header button {
     width: 150px;
   }
 }
+@media (min-width: 1000px) {
+  .games-inventory-card .swiper-slide img {
+    width: 100px;
+  }
+}
+@media (min-width: 1600px) {
+  .games-inventory-card .swiper {
+    padding-top: 85px;
+  }
+  .games-inventory-card .swiper-slide img {
+    width: 140px;
+  }
+}
+@media (min-width: 1800px) {
+  .games-inventory-card .swiper-slide img {
+    width: 200px;
+  }
+}
 .hoodies-card {
   background: #282828;
   color: white;
   padding-top: 8px;
+  position: relative;
 }
 .hoodies-card .links-container .visit-website-link {
   color: #ADA6A6;
@@ -491,6 +510,32 @@ header button {
   padding-top: 8px;
 }
 
+@media (min-width: 1000px) {
+  .hoodies-card .hoodies-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 15px;
+    width: 250px;
+  }
+}
+@media (min-width: 1600px) {
+  .hoodies-card .hoodies-img {
+    width: 300px;
+  }
+}
+@media (min-width: 1800px) {
+  .hoodies-card .hoodies-img {
+    width: 400px;
+    right: 50px;
+  }
+}
+@media (min-width: 1900px) {
+  .hoodies-card .hoodies-img {
+    width: 420px;
+    right: 60px;
+  }
+}
 .projects-grid-container {
   display: flex;
   flex-direction: column;
@@ -511,7 +556,7 @@ header button {
 }
 .projects-grid-container h2 {
   font-weight: 700;
-  font-size: clamp(1.5625rem, 4vw, 4rem);
+  font-size: clamp(1.5625rem, 3.2vw, 4rem);
   margin-top: 32px;
   margin-bottom: 16px;
 }

@@ -2,6 +2,7 @@
   background: #282828;
   color: white;
   padding-top: $spacing-08;
+  position: relative;
 
   .links-container {
     .visit-website-link {
@@ -20,9 +21,40 @@
   }
 }
 
-
 @media (min-width: 1000px) {
   .hoodies-card {
- 
+    .hoodies-img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 15px;
+      width: 250px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .hoodies-card {
+    .hoodies-img {
+      width: 300px;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .hoodies-card {
+    .hoodies-img {
+      width: 400px;
+      right: 50px;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .hoodies-card {
+    .hoodies-img {
+      width: 420px;
+      right: 60px;
+    }
   }
 }
