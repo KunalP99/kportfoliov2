@@ -1,5 +1,6 @@
 
 .weather-app-card {
+  position: relative;
   color: white;
   transition: 1s ease-in-out;
 
@@ -17,14 +18,17 @@
     margin-right: auto;
     width: 350px;
     padding-top: 50px;
-    padding-bottom: 50px;
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1000px) {
   .weather-app-card {
     .weather-app-img {
-      width: 700px;
+      width: 450px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
     }
   }
 }
