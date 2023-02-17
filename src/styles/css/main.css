@@ -557,7 +557,7 @@ header button {
   margin-bottom: 16px;
 }
 .projects-grid-container p {
-  font-size: clamp(0.9375rem, 2vw, 2rem);
+  font-size: clamp(0.9375rem, 2vw, 1.875rem);
   padding: 0px 40px;
 }
 .projects-grid-container h2, .projects-grid-container p {
@@ -577,6 +577,10 @@ header button {
   .projects-grid-container h2 {
     margin-top: 56px;
     margin-bottom: 32px;
+  }
+  .projects-grid-container p {
+    margin: 0 auto;
+    width: 530px;
   }
   .projects-grid-container .links-container {
     font-size: 1.5625rem;

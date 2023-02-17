@@ -27,7 +27,7 @@
   }
  
   p {
-    font-size: clamp(pxToRem(15px), 2vw, pxToRem(32px));
+    font-size: clamp(pxToRem(15px), 2vw, pxToRem(30px));
     padding: 0px $spacing-40;
   }
 
@@ -51,6 +51,11 @@
     h2 {
       margin-top: $spacing-56;
       margin-bottom: $spacing-32;
+    }
+
+    p {
+      margin: 0 auto;
+      width: 530px;
     }
 
     .links-container {
