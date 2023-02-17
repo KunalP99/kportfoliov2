@@ -508,23 +508,35 @@ header button {
 .hoodies-card .hoodies-img {
   position: absolute;
   bottom: -5px;
-  right: 0;
+  right: 22px;
   left: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 220px;
   padding-top: 8px;
   animation: skew 10s ease-in-out 0s infinite forwards;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
   .hoodies-card .hoodies-img {
-    width: 250px;
+    width: 270px;
+    right: 20px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 600px) {
   .hoodies-card .hoodies-img {
-    width: 300px;
+    width: 350px;
+    right: 25px;
+  }
+}
+@media (min-width: 1000px) {
+  .hoodies-card .hoodies-img {
+    width: 270px;
+  }
+}
+@media (min-width: 1300px) {
+  .hoodies-card .hoodies-img {
+    width: 350px;
   }
 }
 @media (min-width: 1800px) {
@@ -536,7 +548,7 @@ header button {
 @media (min-width: 1900px) {
   .hoodies-card .hoodies-img {
     width: 420px;
-    right: 60px;
+    right: 30px;
   }
 }
 @keyframes skew {
