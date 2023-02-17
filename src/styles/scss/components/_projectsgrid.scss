@@ -39,14 +39,15 @@
 @media (min-width: 1000px) {
   .projects-grid-container {
     display: grid;
-    grid-template-columns: 50vw 50vw;
-    gap: $spacing-08;
+    grid-template-columns: 50% 50%;
+    gap: $spacing-16;
+    padding-left: $spacing-24;
+    padding-right: $spacing-24;
   }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 2500px) {
   .projects-grid-container {
-    grid-template-columns: 940px 940px;
-    grid-template-rows: 800px 800px
+    grid-template-columns: 1200px 1200px;
   }
 }

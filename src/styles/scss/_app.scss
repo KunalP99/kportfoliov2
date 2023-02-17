@@ -1,9 +1,9 @@
 body {
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 .container {
-  width: 1903px;
+  max-width: 2600px;
   margin: 0 auto;
 
   .content {
