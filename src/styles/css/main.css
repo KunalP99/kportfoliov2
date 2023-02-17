@@ -573,6 +573,16 @@ header button {
   padding-bottom: 50px;
 }
 
+@media (min-width: 1500px) {
+  .weather-app-card .weather-app-img {
+    width: 700px;
+  }
+}
+@media (min-width: 1800px) {
+  .weather-app-card .weather-app-img {
+    width: auto;
+  }
+}
 .projects-grid-container {
   display: flex;
   flex-direction: column;
