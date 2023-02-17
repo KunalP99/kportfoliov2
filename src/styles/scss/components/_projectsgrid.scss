@@ -4,8 +4,9 @@
 @import "../components/projects/on1";
 
 .projects-grid-container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: 1fr;
   margin-top: $spacing-40;
   justify-content: center;
   gap: 8px;
@@ -43,7 +44,6 @@
   .projects-grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-auto-rows: 1fr;
     gap: $spacing-16;
     padding-left: $spacing-24;
     padding-right: $spacing-24;

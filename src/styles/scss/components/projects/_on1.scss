@@ -13,21 +13,25 @@
     color: rgba(0, 0, 0, 0.62);
   }
 
-  a {
-    color: #AA95F8;
+  .links-container {
+    margin-bottom: $spacing-32;
+    a {
+      color: #AA95F8;
+    }
   }
 
   .on1-anim {
     display: block;
     margin: 0 auto;
     padding: $spacing-16;
+    max-width: 650px;
   }
 }
 
-@media (min-width: 500px) {
-  .on1-card {
-    .on1-anim {
-      width: 300px;
-    }
-  }
-}
+// @media (min-width: 700px) {
+//   .on1-card {
+//     .on1-anim {
+//       max-width: 700px;
+//     }
+//   }
+// }

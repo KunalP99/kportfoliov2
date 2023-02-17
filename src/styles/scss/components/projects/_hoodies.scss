@@ -15,8 +15,12 @@
   }
 
   .hoodies-img {
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 200px;
     padding-top: $spacing-08;
     animation: skew 10s ease-in-out 0s infinite forwards;
@@ -26,10 +30,6 @@
 @media (min-width: 1000px) {
   .hoodies-card {
     .hoodies-img {
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      right: 15px;
       width: 250px;
     }
   }
