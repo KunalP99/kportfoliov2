@@ -583,27 +583,16 @@ header button {
   color: #FFF;
 }
 .weather-app-card .weather-app-img {
-  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
+  width: 95%;
   padding-top: 50px;
 }
 
-@media (min-width: 1000px) {
-  .weather-app-card .weather-app-img {
-    width: 450px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-}
-@media (min-width: 1800px) {
-  .weather-app-card .weather-app-img {
-    width: auto;
-  }
-}
 .bg-morning {
   background-color: #00B3EC;
 }
