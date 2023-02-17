@@ -41,6 +41,7 @@
   .projects-grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-auto-rows: 1fr;
     gap: $spacing-16;
     padding-left: $spacing-24;
     padding-right: $spacing-24;
