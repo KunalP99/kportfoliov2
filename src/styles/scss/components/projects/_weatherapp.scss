@@ -1,6 +1,7 @@
+
 .weather-app-card {
-  background: linear-gradient(180deg, #00B3EC 45.31%, #1A9EC8 100%);
   color: white;
+  transition: 1s ease-in-out;
 
   .links-container {
     .visit-website-link {
@@ -35,3 +36,20 @@
     }
   }
 }
+
+  // BG colours
+  .bg-morning {
+    background-color:#00B3EC;
+  }
+  .bg-afternoon {
+    background-color:#80A9F4;
+  }
+  .bg-evening {
+    background-color: rgba(254, 185, 83, 0.72);
+  }
+  .bg-night {
+    background-color:rgba(10, 41, 109, 0.55);
+  }
+  .bg-midnight {
+    background:rgba(42, 49, 64, 0.55);
+  }

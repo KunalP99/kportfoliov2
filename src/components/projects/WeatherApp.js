@@ -1,6 +1,8 @@
 import BlackArrow from '../../images/projects/black-arrow.svg';
 import WhiteArrow from '../../images/projects/white-arrow.svg';
 import LaptopMorning from '../../images/projects/weather/laptop-morning.png';
+import { useEffect } from 'react';
+// import { useEffect } from 'react';
 // import LaptopAfternoon from '../../images/projects/weather/laptop-afternoon.png';
 // import LaptopEvening from '../../images/projects/weather/laptop-evening.png';
 // import LaptopNight from '../../images/projects/weather/laptop-night.png';
@@ -17,8 +19,38 @@ import LaptopMorning from '../../images/projects/weather/laptop-morning.png';
 //   "linear-gradient(180deg, rgba(42, 49, 64, 0.55) 0%, #484A4E 58.56%)";
 
 const WeatherApp = () => {
+  useEffect(() => {
+    const weatherAppCard = document.querySelector('.weather-app-card');
+
+    const bgInterval = setInterval(() => {
+      if (weatherAppCard.classList.contains('bg-morning')) {
+        // To Afternoon
+        weatherAppCard.classList.remove('bg-morning');
+        weatherAppCard.classList.add('bg-afternoon');
+      } else if (weatherAppCard.classList.contains('bg-afternoon')) {
+        // To Evening
+        weatherAppCard.classList.remove('bg-afternoon');
+        weatherAppCard.classList.add('bg-evening');
+      } else if (weatherAppCard.classList.contains('bg-evening')) {
+        // To Night
+        weatherAppCard.classList.remove('bg-evening');
+        weatherAppCard.classList.add('bg-night');
+      } else if (weatherAppCard.classList.contains('bg-night')) {
+        // To Midnight
+        weatherAppCard.classList.remove('bg-night');
+        weatherAppCard.classList.add('bg-midnight');
+      } else if (weatherAppCard.classList.contains('bg-midnight')) {
+        // To Morning
+        weatherAppCard.classList.remove('bg-midnight');
+        weatherAppCard.classList.add('bg-morning');
+      }
+    }, 2000);
+
+    return () => clearInterval(bgInterval);
+  }, []);
+  
   return (
-    <div className="card weather-app-card">
+    <div className="card weather-app-card bg-morning" >
       <h2>Weather App</h2>
       <p>Get the forecast, make a plan, and seize the day.</p>
       <div className="links-container">

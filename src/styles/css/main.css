@@ -555,8 +555,8 @@ header button {
   }
 }
 .weather-app-card {
-  background: linear-gradient(180deg, #00B3EC 45.31%, #1A9EC8 100%);
   color: white;
+  transition: 1s ease-in-out;
 }
 .weather-app-card .links-container .visit-website-link {
   color: #444444;
@@ -583,6 +583,26 @@ header button {
     width: auto;
   }
 }
+.bg-morning {
+  background-color: #00B3EC;
+}
+
+.bg-afternoon {
+  background-color: #80A9F4;
+}
+
+.bg-evening {
+  background-color: rgba(254, 185, 83, 0.72);
+}
+
+.bg-night {
+  background-color: rgba(10, 41, 109, 0.55);
+}
+
+.bg-midnight {
+  background: rgba(42, 49, 64, 0.55);
+}
+
 .projects-grid-container {
   display: flex;
   flex-direction: column;
@@ -619,6 +639,7 @@ header button {
   .projects-grid-container {
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-auto-rows: 1fr;
     gap: 16px;
     padding-left: 24px;
     padding-right: 24px;
