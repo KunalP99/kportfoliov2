@@ -1,0 +1,21 @@
+.weather-app-card {
+  background: linear-gradient(180deg, #00B3EC 45.31%, #1A9EC8 100%);
+  color: white;
+
+  .links-container {
+    .visit-website-link {
+      color: #444444;
+    }
+    .github-link {
+      color: #FFF;
+    }
+  }
+  .weather-app-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
