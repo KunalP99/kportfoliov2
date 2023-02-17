@@ -19,8 +19,16 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 95%;
+    width: 98%;
     padding-top: 50px;
+  }
+}
+
+@media (min-width: 2300px) {
+  .weather-app-card {
+    .weather-app-img {
+      width: 90%;
+    }
   }
 }
 
