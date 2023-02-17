@@ -46,6 +46,19 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .projects-grid-container {
+    h2 {
+      margin-top: $spacing-56;
+      margin-bottom: $spacing-32;
+    }
+
+    .links-container {
+      font-size: pxToRem(25px);
+    }
+  }
+}
+
 @media (min-width: 2500px) {
   .projects-grid-container {
     grid-template-columns: 1200px 1200px;

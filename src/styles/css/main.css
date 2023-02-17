@@ -573,6 +573,15 @@ header button {
     padding-right: 24px;
   }
 }
+@media (min-width: 1500px) {
+  .projects-grid-container h2 {
+    margin-top: 56px;
+    margin-bottom: 32px;
+  }
+  .projects-grid-container .links-container {
+    font-size: 1.5625rem;
+  }
+}
 @media (min-width: 2500px) {
   .projects-grid-container {
     grid-template-columns: 1200px 1200px;
