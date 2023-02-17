@@ -3,6 +3,7 @@
   color: white;
   padding-top: $spacing-08;
   position: relative;
+  overflow: hidden;
 
   .links-container {
     .visit-website-link {
@@ -18,6 +19,7 @@
     margin: 0 auto;
     width: 200px;
     padding-top: $spacing-08;
+    animation: skew 10s ease-in-out 0s infinite forwards;
   }
 }
 
@@ -25,7 +27,7 @@
   .hoodies-card {
     .hoodies-img {
       position: absolute;
-      bottom: 0;
+      bottom: -5px;
       left: 0;
       right: 15px;
       width: 250px;
@@ -56,5 +58,32 @@
       width: 420px;
       right: 60px;
     }
+  }
+}
+
+// Animations
+@keyframes skew {
+  0% {
+    transform: skewY(0);
+  }
+
+  20% {
+    transform: skewY(2deg);
+  }
+
+  40% {
+    transform: skewY(-2deg);
+  }
+
+  60% {
+    transform: skewY(2deg);
+  }
+
+  80% {
+    transform: skewY(-2deg);
+  }
+
+  100% {
+    transform: skewY(0);
   }
 }

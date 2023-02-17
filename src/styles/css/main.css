@@ -492,6 +492,7 @@ header button {
   color: white;
   padding-top: 8px;
   position: relative;
+  overflow: hidden;
 }
 .hoodies-card .links-container .visit-website-link {
   color: #ADA6A6;
@@ -504,12 +505,13 @@ header button {
   margin: 0 auto;
   width: 200px;
   padding-top: 8px;
+  animation: skew 10s ease-in-out 0s infinite forwards;
 }
 
 @media (min-width: 1000px) {
   .hoodies-card .hoodies-img {
     position: absolute;
-    bottom: 0;
+    bottom: -5px;
     left: 0;
     right: 15px;
     width: 250px;
@@ -530,6 +532,26 @@ header button {
   .hoodies-card .hoodies-img {
     width: 420px;
     right: 60px;
+  }
+}
+@keyframes skew {
+  0% {
+    transform: skewY(0);
+  }
+  20% {
+    transform: skewY(2deg);
+  }
+  40% {
+    transform: skewY(-2deg);
+  }
+  60% {
+    transform: skewY(2deg);
+  }
+  80% {
+    transform: skewY(-2deg);
+  }
+  100% {
+    transform: skewY(0);
   }
 }
 .projects-grid-container {
