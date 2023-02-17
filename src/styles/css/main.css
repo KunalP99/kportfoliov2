@@ -612,6 +612,33 @@ header button {
   background: rgba(42, 49, 64, 0.55);
 }
 
+.on1-card {
+  background: #F4EBFF;
+  padding-top: 8px;
+}
+.on1-card h2 {
+  background: linear-gradient(106.43deg, #7AA6FE 0.01%, #BE9EF9 100.01%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.on1-card p {
+  color: rgba(0, 0, 0, 0.62);
+}
+.on1-card a {
+  color: #AA95F8;
+}
+.on1-card .on1-anim {
+  display: block;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+@media (min-width: 500px) {
+  .on1-card .on1-anim {
+    width: 300px;
+  }
+}
 .projects-grid-container {
   display: flex;
   flex-direction: column;

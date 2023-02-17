@@ -1,6 +1,7 @@
 import GamesInventory from './projects/GamesInventory';
 import Hoodies from './projects/Hoodies';
 import WeatherApp from './projects/WeatherApp';
+import On1Solutions from './projects/On1Solutions';
 
 const ProjectsGrid = () => {
   return (
@@ -8,7 +9,7 @@ const ProjectsGrid = () => {
       <GamesInventory />
       <Hoodies />
       <WeatherApp />
-      <div className="on1-card"></div>
+      <On1Solutions />
     </div>
   );
 };

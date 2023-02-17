@@ -1,0 +1,33 @@
+.on1-card {
+  background: #F4EBFF;
+  padding-top: $spacing-08;
+
+  h2 {
+    background: linear-gradient(106.43deg, #7AA6FE 0.01%, #BE9EF9 100.01%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 0.62);
+  }
+
+  a {
+    color: #AA95F8;
+  }
+
+  .on1-anim {
+    display: block;
+    margin: 0 auto;
+    padding: $spacing-16;
+  }
+}
+
+@media (min-width: 500px) {
+  .on1-card {
+    .on1-anim {
+      width: 300px;
+    }
+  }
+}
