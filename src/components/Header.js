@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <img src={Logo} alt="Logo for kportfolio" />
-      <button>Say Hello 👋</button>
+      <a href='mailto:kunal_patel200@hotmail.co.uk'>Say Hello 👋</a>
     </header>
   );
 };

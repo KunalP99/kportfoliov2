@@ -7,9 +7,10 @@ header {
     width: 60px;
   }
 
-  button {
+  a {
     display: none;
     border: none;
+    text-decoration: none;
     background-color: black;
     color: white;
     border-radius: 55px;
@@ -28,7 +29,7 @@ header {
       width: 65px;
     }
 
-    button {
+    a {
       display: block;
 
     }
@@ -42,7 +43,7 @@ header {
        width: 80px;
     }
 
-    button {
+    a {
       padding: $spacing-16 $spacing-32;
       font-size: pxToRem(22px);
     }
