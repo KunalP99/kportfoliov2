@@ -12,6 +12,7 @@ import AboutImg4 from '../images/about/about-img-4.jpg';
 import AboutImg5 from '../images/about/about-img-5.jpg';
 import AboutImg6 from '../images/about/about-img-6.jpg';
 import AboutImg7 from '../images/about/about-img-7.jpg';
+import AboutImg8 from '../images/about/about-img-8.jpg';
 
 // Video 
 import AboutVid1 from '../images/about/about-vid-1.mp4';
@@ -76,6 +77,9 @@ const About = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={AboutImg7} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={AboutImg8} />
         </SwiperSlide>
       </Swiper>
     </div>
