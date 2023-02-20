@@ -712,9 +712,10 @@ header a {
 }
 .about-container p {
   margin-top: 16px;
+  font-size: clamp(0.9375rem, 2vw, 1.875rem);
 }
 .about-container h2, .about-container p {
-  padding: 0px 32px;
+  padding: 0px 40px;
 }
 .about-container .about-swiper {
   width: 100%;
@@ -741,12 +742,31 @@ header a {
 }
 
 @media (min-width: 700px) {
+  .about-container h2, .about-container p {
+    padding-left: 112px;
+  }
   .about-container .swiper-slide img, .about-container video {
     height: 600px;
+  }
+}
+@media (min-width: 1000px) {
+  .about-container h2, .about-container p {
+    padding-left: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-container h2, .about-container p {
+    padding-left: 150px;
   }
 }
 @media (min-width: 1600px) {
   .about-container {
     margin-top: 120px;
+  }
+  .about-container p {
+    padding-right: 250px;
+  }
+  .about-container h2, .about-container p {
+    padding-left: 250px;
   }
 }

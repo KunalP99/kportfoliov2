@@ -8,10 +8,11 @@
 
   p {
     margin-top: $spacing-16;
+    font-size: clamp(pxToRem(15px), 2vw, pxToRem(30px));
   }
 
   h2, p {
-    padding: 0px $spacing-32;
+    padding: 0px $spacing-40;
   }
 
    // SwiperJS styling
@@ -47,14 +48,40 @@
 
 @media (min-width: 700px) {
    .about-container {
+    h2, p {
+      padding-left: $spacing-112;
+    }
+
     .swiper-slide img, video {
       height: 600px;
     }
    }
 }
 
+@media (min-width: 1000px) {
+  .about-container {
+    h2, p {
+      padding-left: $spacing-120;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-container {
+    h2, p {
+      padding-left: 150px;
+    }
+  }
+}
+
 @media (min-width: 1600px) {
   .about-container {
     margin-top: $spacing-120;
+    p {
+      padding-right: 250px;
+    }
+    h2, p {
+      padding-left: 250px;
+    }
   }
 }
