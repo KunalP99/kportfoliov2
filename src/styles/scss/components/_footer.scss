@@ -1,0 +1,54 @@
+footer {
+  background: #252525;
+  color: white;
+  @include flex-center;
+  flex-direction: column;
+  font-family: $main-font-family;
+  margin-top: $spacing-64;
+
+  .back-to-top {
+    text-align: center;
+    margin-top: $spacing-40;
+    margin-bottom: $spacing-40;
+    font-weight: $medium;
+
+    img {
+      width: 35px;
+      cursor: pointer;
+    }
+  }
+
+  .social-links-container {
+    @include flex-center-vert;
+    gap: 16px;
+    margin-bottom: $spacing-40;
+
+    img {
+      width: 40px;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  footer {
+    margin-top: $spacing-120;
+    
+    .back-to-top {
+      margin-bottom: $spacing-56;
+      img {
+        width: auto;
+      }
+
+      p {
+        font-size: pxToRem(36px);
+      }
+    }
+
+    .social-links-container {
+      gap: $spacing-40;
+      img {
+        width: auto;
+      }
+    }
+  }
+}
