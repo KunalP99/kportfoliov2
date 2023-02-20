@@ -53,10 +53,8 @@
    }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1600px) {
   .about-container {
-    .swiper-slide img, video {
-
-    }
+    margin-top: $spacing-120;
   }
 }
