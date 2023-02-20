@@ -24,7 +24,7 @@
   .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 600px;
+    width: 100%;
     height: auto;
     margin-right: $spacing-08;
     margin-left: $spacing-08;
@@ -34,7 +34,7 @@
     object-fit: cover;
     display: block;
     width: 100%;
-    height: 300px;
+    height: 400px;
 
   }
 
@@ -42,5 +42,21 @@
     -webkit-transition-timing-function:linear; 
     -o-transition-timing-function:linear;
     transition-timing-function:linear; 
+  }
+}
+
+@media (min-width: 700px) {
+   .about-container {
+    .swiper-slide img, video {
+      height: 600px;
+    }
+   }
+}
+
+@media (min-width: 1000px) {
+  .about-container {
+    .swiper-slide img, video {
+
+    }
   }
 }

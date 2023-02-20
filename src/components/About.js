@@ -11,6 +11,7 @@ import AboutImg3 from '../images/about/about-img-3.jpg';
 import AboutImg4 from '../images/about/about-img-4.jpg';
 import AboutImg5 from '../images/about/about-img-5.jpg';
 import AboutImg6 from '../images/about/about-img-6.jpg';
+import AboutImg7 from '../images/about/about-img-7.jpg';
 
 // Video 
 import AboutVid1 from '../images/about/about-vid-1.mp4';
@@ -26,9 +27,20 @@ const About = () => {
       <Swiper
         loop={true}
         centeredSlides={true}
-        slidesPerView={3}
+        slidesPerView={1.8}
         speed={15000}
         simulateTouch={false}
+        breakpoints= {{
+          700: {
+            slidesPerView: 2
+          },
+          1000: {
+            slidesPerView: 2.8
+          },
+          1500: {
+            slidesPerView: 3.8
+          }
+        }}
         autoplay={{
           delay: 1,
           reverseDirection: false,
@@ -61,6 +73,9 @@ const About = () => {
         </SwiperSlide>
         <SwiperSlide>
           <img src={AboutImg6} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={AboutImg7} />
         </SwiperSlide>
       </Swiper>
     </div>
