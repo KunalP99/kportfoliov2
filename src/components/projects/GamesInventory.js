@@ -24,7 +24,7 @@ const GamesInventory = () => {
       <h2>Games Inventory</h2>
       <p>Take control of your games, never misplace a title again.</p>
       <div className="links-container">
-        <a className="visit-website-link" href="https://games-inventory.onrender.com/">Visit Website <img src={OrangeArrow} alt="Visit games inventory website" /></a>
+        <a className="visit-website-link" href="https://games-inventory.onrender.com/" target='_blank' rel="noreferrer">Visit Website <img src={OrangeArrow} alt="Visit games inventory website" /></a>
         <a className="github-link" href="https://github.com/KunalP99/inventory-management" target='_blank' rel="noreferrer">GitHub  <img src={WhiteArrow} alt="Visit games inventory GitHub" /></a>
       </div>
       <Swiper

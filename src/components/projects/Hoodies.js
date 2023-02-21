@@ -8,8 +8,8 @@ const Hoodies = () => {
       <h2>Hoodies</h2>
       <p>Experience the perfect blend of comfort and style with our hoodies.</p>
       <div className="links-container">
-        <a className="visit-website-link" href="https://games-inventory.onrender.com/" target='_blank' rel="noreferrer">Visit Website <img src={GreyArrow} alt="Visit Hoodies website" /></a>
-        <a className="github-link" href="https://github.com/KunalP99/inventory-management" target='_blank' rel="noreferrer">GitHub  <img src={WhiteArrow} alt="Visit Hoodies GitHub" /></a>
+        <a className="visit-website-link" href="https://kunalp99.github.io/shopping-cart/" target='_blank' rel="noreferrer">Visit Website <img src={GreyArrow} alt="Visit Hoodies website" /></a>
+        <a className="github-link" href="https://github.com/KunalP99/shopping-cart" target='_blank' rel="noreferrer">GitHub  <img src={WhiteArrow} alt="Visit Hoodies GitHub" /></a>
       </div>
       <img className='hoodies-img' src={HoodiesImg} alt="Hand holding phone with Hoodies website on it" />
     </div>
