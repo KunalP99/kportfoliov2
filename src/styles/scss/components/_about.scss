@@ -1,17 +1,19 @@
+@import './interests';
+
 .about-container {
   margin-top: $spacing-40;
 
-  h2 {
+   > h2 {
     font-size: clamp(pxToRem(30px), 3vw, pxToRem(60px));
     font-weight: $semi-bold;
   } 
 
-  p {
+  > p {
     margin-top: $spacing-16;
     font-size: clamp(pxToRem(15px), 2vw, pxToRem(30px));
   }
 
-  h2, p {
+  > h2, > p {
     padding: 0px $spacing-40;
   }
 
@@ -48,7 +50,7 @@
 
 @media (min-width: 700px) {
    .about-container {
-    h2, p {
+    > h2, > p {
       padding-left: $spacing-112;
     }
 
@@ -60,7 +62,7 @@
 
 @media (min-width: 1000px) {
   .about-container {
-    h2, p {
+    > h2, > p {
       padding-left: $spacing-120;
     }
   }
@@ -68,7 +70,7 @@
 
 @media (min-width: 1200px) {
   .about-container {
-    h2, p {
+   > h2, > p {
       padding-left: 150px;
     }
   }
@@ -77,10 +79,10 @@
 @media (min-width: 1600px) {
   .about-container {
     margin-top: $spacing-120;
-    p {
+    > p {
       padding-right: 250px;
     }
-    h2, p {
+    > h2, > p {
       padding-left: 250px;
     }
   }
