@@ -1,0 +1,12 @@
+.interests-container {
+  @include flex-center;
+  gap: $spacing-16;
+
+  > p {
+    font-size: pxToRem(30px);
+  }
+
+  img {
+    width: 100px;
+  }
+}

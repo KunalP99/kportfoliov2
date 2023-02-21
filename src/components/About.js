@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
+import Interests from './Interests';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -82,6 +83,7 @@ const About = () => {
           <img src={AboutImg8} />
         </SwiperSlide>
       </Swiper>
+      <Interests />
     </div>
   );
 };
