@@ -9,7 +9,7 @@ import ArrowDown from '../images/hero/down-arrow.svg';
 
 const Hero = () => {
   return (
-    <div>
+    <section>
       <div className="hero-container">
         <h1 className='hero-name'>Kunal Patel</h1>
         <h1 className='hero-role'>Web Developer</h1>
@@ -39,7 +39,7 @@ const Hero = () => {
         <p>Take a look at my recent work</p>
         <img src={ArrowDown} alt="Scroll down to recent works" />
       </div>
-    </div>
+    </section>
     
   );
 };

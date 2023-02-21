@@ -22,7 +22,7 @@ import AboutVid2 from '../images/about/about-vid-2.mp4';
 
 const About = () => {
   return (
-    <div className="about-container">
+    <section className="about-container">
       <h2>About Me</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero dolor culpa recusandae illo illum reiciendis quisquam explicabo amet possimus! Quibusdam minima quisquam temporibus ex magni. Dignissimos similique ut aperiam?</p>
 
@@ -84,7 +84,7 @@ const About = () => {
         </SwiperSlide>
       </Swiper>
       <Interests />
-    </div>
+    </section>
   );
 };
 
