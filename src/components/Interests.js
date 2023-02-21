@@ -3,9 +3,10 @@ import BbIcon from '../images/interests/bb.png';
 import LegoIcon from '../images/interests/lego.png';
 import ControllerIcon from '../images/interests/controller.png';
 import YouTubeIcon from '../images/interests/youtube.png';
+import FoodIcon from '../images/interests/food.png';
 
 const Interests = () => {
-  const imgArr = [BbIcon, LegoIcon, ControllerIcon, YouTubeIcon];
+  const imgArr = [BbIcon, LegoIcon, ControllerIcon, YouTubeIcon, FoodIcon];
 
   useEffect(() => {
     const iconInterests = document.querySelector('.interests-icon');

@@ -707,7 +707,8 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 56px;
+  gap: 16px;
+  margin: 56px 0;
 }
 .interests-container > p {
   font-size: clamp(1.875rem, 10vw, 12.5rem);
@@ -719,6 +720,7 @@ header a {
 @media (min-width: 900px) {
   .interests-container {
     margin: 120px 0;
+    gap: 32px;
   }
   .interests-container img {
     width: 200px;
@@ -727,6 +729,7 @@ header a {
 @media (min-width: 1800px) {
   .interests-container {
     margin: 200px 0;
+    gap: 56px;
   }
 }
 .about-container {
