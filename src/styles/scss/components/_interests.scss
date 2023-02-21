@@ -1,12 +1,28 @@
 .interests-container {
   @include flex-center;
-  gap: $spacing-16;
+  gap: $spacing-56;
 
   > p {
-    font-size: pxToRem(30px);
+    font-size:clamp(pxToRem(30px), 10vw, pxToRem(200px));
   }
 
   img {
     width: 100px;
+  }
+}
+
+@media (min-width: 900px) {
+  .interests-container {
+    margin: $spacing-120 0;
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .interests-container {
+    margin: 200px 0;
   }
 }

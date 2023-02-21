@@ -707,15 +707,28 @@ header a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 56px;
 }
 .interests-container > p {
-  font-size: 1.875rem;
+  font-size: clamp(1.875rem, 10vw, 12.5rem);
 }
 .interests-container img {
   width: 100px;
 }
 
+@media (min-width: 900px) {
+  .interests-container {
+    margin: 120px 0;
+  }
+  .interests-container img {
+    width: 200px;
+  }
+}
+@media (min-width: 1800px) {
+  .interests-container {
+    margin: 200px 0;
+  }
+}
 .about-container {
   margin-top: 40px;
 }
@@ -733,7 +746,6 @@ header a {
 .about-container .about-swiper {
   width: 100%;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 .about-container .swiper-slide {
   background-position: center;
