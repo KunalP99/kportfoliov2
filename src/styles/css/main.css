@@ -598,6 +598,7 @@ header a {
   width: 220px;
   padding-top: 8px;
   animation: skew 10s ease-in-out 0s infinite forwards;
+  transition: width 300ms ease-in-out;
 }
 
 @media (min-width: 500px) {
@@ -674,6 +675,7 @@ header a {
   margin-right: auto;
   width: 98%;
   padding-top: 50px;
+  transition: width 300ms ease-in-out;
 }
 
 @media (min-width: 2300px) {
@@ -725,6 +727,7 @@ header a {
   margin: 0 auto;
   padding: 16px;
   max-width: 650px;
+  transition: width 300ms ease-in-out;
 }
 
 .projects-grid-container {

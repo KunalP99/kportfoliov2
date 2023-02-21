@@ -24,6 +24,7 @@
     width: 220px;
     padding-top: $spacing-08;
     animation: skew 10s ease-in-out 0s infinite forwards;
+    transition: width 300ms ease-in-out;
   }
 }
 
