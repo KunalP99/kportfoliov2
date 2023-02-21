@@ -458,49 +458,121 @@ header a {
 .games-inventory-card .links-container .github-link {
   color: #FFF;
 }
-.games-inventory-card .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.games-inventory-card .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 100px;
-  height: auto;
-}
-.games-inventory-card .swiper-slide img {
+.games-inventory-card .games-inventory-illustration {
   display: block;
-  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  margin-top: 32px;
+  width: auto;
+  height: 300px;
 }
-.games-inventory-card .swiper-wrapper {
-  transition-timing-function: linear;
+.games-inventory-card .games-inventory-illustration img {
+  width: 120px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.games-inventory-card .games-inventory-illustration .inventory-img-1 {
+  right: 180px;
+  top: 15px;
+  animation: rotateAnimNegative 3s ease-in-out 0s infinite forwards;
+}
+.games-inventory-card .games-inventory-illustration .inventory-img-2 {
+  animation: rotateAnim 3s ease-in-out 0s infinite forwards;
+}
+.games-inventory-card .games-inventory-illustration .inventory-img-3 {
+  transform: rotate(20deg);
+  left: 180px;
+  top: 15px;
+  animation: rotateAnimPositive 3s ease-in-out 0s infinite forwards;
+}
+.games-inventory-card .games-inventory-illustration .inventory-img-1, .games-inventory-card .games-inventory-illustration .inventory-img-2, .games-inventory-card .games-inventory-illustration .inventory-img-3 {
+  transition: width 300ms ease-in-out;
 }
 
-@media (min-width: 700px) {
-  .games-inventory-card .swiper-slide {
-    width: 150px;
+@media (min-width: 650px) {
+  .games-inventory-card .games-inventory-illustration img {
+    width: 180px;
   }
-  .games-inventory-card .swiper-slide img {
-    width: 150px;
+  .games-inventory-card .games-inventory-illustration .inventory-img-1 {
+    right: 270px;
+  }
+  .games-inventory-card .games-inventory-illustration .inventory-img-3 {
+    left: 270px;
   }
 }
 @media (min-width: 1000px) {
-  .games-inventory-card .swiper-slide img {
-    width: 100px;
+  .games-inventory-card .games-inventory-illustration img {
+    width: 120px;
+  }
+  .games-inventory-card .games-inventory-illustration .inventory-img-1 {
+    right: 180px;
+    top: 15px;
+  }
+  .games-inventory-card .games-inventory-illustration .inventory-img-3 {
+    left: 180px;
+    top: 15px;
   }
 }
-@media (min-width: 1600px) {
-  .games-inventory-card .swiper {
-    padding-top: 85px;
+@media (min-width: 1200px) {
+  .games-inventory-card .games-inventory-illustration img {
+    width: 180px;
   }
-  .games-inventory-card .swiper-slide img {
-    width: 140px;
+  .games-inventory-card .games-inventory-illustration .inventory-img-1 {
+    right: 260px;
+  }
+  .games-inventory-card .games-inventory-illustration .inventory-img-3 {
+    left: 260px;
   }
 }
 @media (min-width: 1800px) {
-  .games-inventory-card .swiper-slide img {
-    width: 200px;
+  .games-inventory-card {
+    padding-bottom: 170px;
+  }
+  .games-inventory-card .games-inventory-illustration img {
+    width: 220px;
+  }
+  .games-inventory-card .games-inventory-illustration .inventory-img-1 {
+    right: 350px;
+  }
+  .games-inventory-card .games-inventory-illustration .inventory-img-3 {
+    left: 350px;
+  }
+}
+@keyframes rotateAnimNegative {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(-22deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes rotateAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes rotateAnimPositive {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(22deg);
+  }
+  100% {
+    transform: rotate(20deg);
   }
 }
 .hoodies-card {

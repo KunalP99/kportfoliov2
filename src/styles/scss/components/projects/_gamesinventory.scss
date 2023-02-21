@@ -2,7 +2,7 @@
   background: #000000;
   color: white;
   padding: $spacing-08;
-  
+
   .links-container {
     .visit-website-link {
       color: #DD6031;
@@ -12,68 +12,157 @@
     }
   }
 
-  // SwiperJS styling
-  .swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 100px;
-    height: auto;
-  }
-
-  .swiper-slide img {
+  .games-inventory-illustration {
     display: block;
-    width: 100px;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: $spacing-32;
+    width: auto;
+    height: 300px;
 
-  .swiper-wrapper{
-    -webkit-transition-timing-function:linear; 
-    -o-transition-timing-function:linear;
-    transition-timing-function:linear; 
+    img {
+      width: 120px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .inventory-img-1 {
+      // transform: rotate(-20deg);
+      right: 180px;
+      top: 15px;
+      animation: rotateAnimNegative 3s ease-in-out 0s infinite forwards;
+    }
+    .inventory-img-2 {
+      animation: rotateAnim 3s ease-in-out 0s infinite forwards;
+    }
+    .inventory-img-3 {
+      transform: rotate(20deg);
+      left: 180px;
+      top: 15px;
+      animation: rotateAnimPositive 3s ease-in-out 0s infinite forwards;
+    }
+
+    // Animate width when screen size changes 
+    .inventory-img-1, .inventory-img-2, .inventory-img-3 {
+      transition: width 300ms ease-in-out;
+    }
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 650px) {
   .games-inventory-card {
-    .swiper-slide {
-      width: 150px;
-    }
-
-    .swiper-slide img {
-      width: 150px;
+    .games-inventory-illustration {
+      img {
+        width: 180px;
+      }
+      .inventory-img-1 {
+        right: 270px;
+      }
+      .inventory-img-3 {
+        left: 270px;
+      }
     }
   }
 }
 
 @media (min-width: 1000px) {
   .games-inventory-card {
-    .swiper-slide img {
-      width: 100px;
+    .games-inventory-illustration {
+      img {
+        width: 120px;
+      }
+
+      .inventory-img-1 {
+        right: 180px;
+        top: 15px;
+      }
+      .inventory-img-3 {
+        left: 180px;
+        top: 15px;
+      }
     }
   }
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .games-inventory-card {
-    .swiper {
-      padding-top: 85px;
-    }
+    .games-inventory-illustration {
+      img {
+        width: 180px;
+      }
 
-    .swiper-slide img {
-      width: 140px;
+      .inventory-img-1 {
+        right: 260px;
+      }
+      .inventory-img-3 {
+        left: 260px;
+      }
     }
   }
 }
 
 @media (min-width: 1800px) {
   .games-inventory-card {
-    .swiper-slide img {
-      width: 200px;
+    padding-bottom: 170px;
+
+    .games-inventory-illustration {
+      img {
+        width: 220px;
+      }
+
+      .inventory-img-1 {
+        right: 350px;
+      }
+      .inventory-img-3 {
+        left: 350px;
+      }
     }
+  }
+}
+
+// Animations
+@keyframes rotateAnimNegative {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(-22deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes rotateAnim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(2deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateAnimPositive {
+  0% {
+    transform: rotate(20deg);
+  }
+
+  50% {
+    transform: rotate(22deg);
+  }
+
+  100% {
+    transform: rotate(20deg);
   }
 }
