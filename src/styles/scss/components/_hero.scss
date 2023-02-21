@@ -99,11 +99,21 @@
   text-align: center;
   margin-top: $spacing-120;
 
+  button {
+    background: transparent;
+    border: none;
+    transition: transform 300ms ease-in-out;
+  }  
+  button:hover {
+    transform: translateY(7px);
+  }
+
   img {
     width: 30px;
     margin-top: $spacing-16;
     cursor: pointer;
   }
+
 }
 
 @media (min-width: 500px) {

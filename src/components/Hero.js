@@ -9,7 +9,7 @@ import ArrowDown from '../images/hero/down-arrow.svg';
 
 const Hero = () => {
   return (
-    <section>
+    <section id='hero'>
       <div className="hero-container">
         <h1 className='hero-name'>Kunal Patel</h1>
         <h1 className='hero-role'>Web Developer</h1>
@@ -37,7 +37,9 @@ const Hero = () => {
       </div>
       <div className='hero-recent-work-container'>
         <p>Take a look at my recent work</p>
-        <img src={ArrowDown} alt="Scroll down to recent works" />
+        <button type='button'>
+          <img src={ArrowDown} alt="Scroll down to recent works" onClick={() => document.getElementById('projects').scrollIntoView()} />
+        </button> 
       </div>
     </section>
     

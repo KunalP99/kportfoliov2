@@ -7,7 +7,9 @@ const Footer = () => {
   return (
     <footer>
       <div className='back-to-top'>
-        <img src={UpArrow} alt="Scroll back to the top" />
+        <button type='button'>
+          <img src={UpArrow} alt="Scroll back to the top" onClick={() => document.getElementById('header').scrollIntoView()}/>
+        </button> 
         <p>Back to the top</p>
       </div>
       <div className='social-links-container'>

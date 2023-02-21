@@ -12,6 +12,16 @@ footer {
     margin-bottom: $spacing-40;
     font-weight: $medium;
 
+    button {
+      background: transparent;
+      border: none;
+      margin-bottom: $spacing-16;
+      transition: transform 300ms ease-in-out;
+    }
+    button:hover {
+      transform: translateY(-7px);
+    }
+
     img {
       width: 35px;
       cursor: pointer;
