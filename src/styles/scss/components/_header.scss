@@ -1,51 +1,96 @@
 header {
-  padding: $spacing-16;
-  text-align: center;
   font-family: $main-font-family;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
 
-  img {
-    width: 60px;
-  }
-
-  a {
-    display: none;
-    border: none;
-    text-decoration: none;
-    background-color: black;
+  h3 {
+    font-family: $hero-font-family;
+    font-size: pxToRem(22px);
     color: white;
-    border-radius: 55px;
-    padding: $spacing-16 $spacing-24;
-    font-weight: 500;
-    font-size: pxToRem(15px);
   }
-}
 
-@media (min-width: 700px) {
-  header {
+  nav {
+    padding: $spacing-16;
     @include flex-center-vert;
     justify-content: space-between;
+    backdrop-filter: blur(2px);
 
-    img {
-      width: 65px;
+    .hamburger {
+      display: none;
+      background: transparent;
+      border: none;
+    }
+
+    ul {
+      display: flex;
+      gap: $spacing-32;
     }
 
     a {
-      display: block;
-
+      text-decoration: none;
+      color: white;
     }
+  }
+
+  .action-btn {
+    border: none;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 55px;
+    padding: $spacing-08 $spacing-16;
+    font-weight: 500;
+    font-size: pxToRem(16px);
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 700px) {
   header {
-    padding: 32px 50px;
-    img {
-       width: 80px;
-    }
+    nav {
+      flex-direction: column;
+      align-items:  flex-start;
+      justify-content: center;
 
-    a {
-      padding: $spacing-16 $spacing-32;
-      font-size: pxToRem(22px);
+      .navbar-links {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        background: black;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        width: 80%;
+      }
+      .navbar-links.active {
+        display: flex;
+      }
+
+      ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: $spacing-56;
+        font-size: pxToRem(30px);
+      }
+      
+      .hamburger {
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        display: flex;
+        cursor: pointer;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+    .action-btn {
+      font-size: pxToRem(30px);
+      padding: $spacing-16 $spacing-24;
     }
   }
 }
