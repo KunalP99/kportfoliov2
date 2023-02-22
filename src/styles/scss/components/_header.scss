@@ -3,8 +3,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(2px);
+  background: #252525ed;
+
+  a {
+    text-decoration: none;
+  }
 
   h3 {
     font-family: $hero-font-family;
@@ -29,9 +32,11 @@ header {
       gap: $spacing-32;
     }
 
-    a {
-      text-decoration: none;
+    button {
+      background: transparent;
+      border: none;
       color: white;
+      font-size: pxToRem(16px);
     }
   }
 
@@ -59,7 +64,7 @@ header {
         justify-content: center;
         align-items: center;
         position: absolute;
-        background: black;
+        background: #252525;
         right: 0;
         top: 0;
         height: 100vh;

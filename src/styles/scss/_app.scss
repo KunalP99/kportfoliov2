@@ -6,6 +6,10 @@ html {
   max-width: 2600px;
   margin: 0 auto;
 
+  button {
+    cursor: pointer;
+  }
+
   .content {
     font-family: $main-font-family;
     // margin-top: 50px;

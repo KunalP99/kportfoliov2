@@ -57,6 +57,9 @@ html {
   max-width: 2600px;
   margin: 0 auto;
 }
+.container button {
+  cursor: pointer;
+}
 .container .content {
   font-family: "Inter", sans-serif;
   width: 100%;
@@ -103,9 +106,10 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.7);
-  -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  background: rgba(37, 37, 37, 0.9294117647);
+}
+header a {
+  text-decoration: none;
 }
 header h3 {
   font-family: "Michroma", sans-serif;
@@ -129,9 +133,11 @@ header nav ul {
   display: flex;
   gap: 32px;
 }
-header nav a {
-  text-decoration: none;
+header nav button {
+  background: transparent;
+  border: none;
   color: white;
+  font-size: 1rem;
 }
 header .action-btn {
   border: none;
@@ -155,7 +161,7 @@ header .action-btn {
     justify-content: center;
     align-items: center;
     position: absolute;
-    background: black;
+    background: #252525;
     right: 0;
     top: 0;
     height: 100vh;
