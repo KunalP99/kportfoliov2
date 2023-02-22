@@ -38,6 +38,9 @@ header {
       color: white;
       font-size: pxToRem(16px);
     }
+    button:hover {
+      color: rgb(194, 194, 194);
+    }
   }
 
   .action-btn {
@@ -49,6 +52,9 @@ header {
     padding: $spacing-08 $spacing-16;
     font-weight: 500;
     font-size: pxToRem(16px);
+  }
+  .action-btn:hover {
+    background: rgb(194, 194, 194);
   }
 }
 
@@ -78,7 +84,9 @@ header {
         flex-direction: column;
         align-items: flex-start;
         gap: $spacing-56;
-        font-size: pxToRem(30px);
+      }
+      button {
+        font-size: clamp(pxToRem(16px), 5vw, pxToRem(30px));
       }
       
       .hamburger {
@@ -94,8 +102,18 @@ header {
       }
     }
     .action-btn {
-      font-size: pxToRem(30px);
-      padding: $spacing-16 $spacing-24;
+      font-size: clamp(pxToRem(16px), 3vw, pxToRem(30px));
+      padding: $spacing-08 $spacing-16;
+    }
+  }
+}
+
+@media (max-width:350px) {
+  header {
+    nav {
+      ul {
+        gap: $spacing-16;
+      }
     }
   }
 }

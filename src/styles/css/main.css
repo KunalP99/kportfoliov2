@@ -56,6 +56,7 @@ html {
 .container {
   max-width: 2600px;
   margin: 0 auto;
+  color: white;
 }
 .container button {
   cursor: pointer;
@@ -139,6 +140,9 @@ header nav button {
   color: white;
   font-size: 1rem;
 }
+header nav button:hover {
+  color: rgb(194, 194, 194);
+}
 header .action-btn {
   border: none;
   text-decoration: none;
@@ -148,6 +152,9 @@ header .action-btn {
   padding: 8px 16px;
   font-weight: 500;
   font-size: 1rem;
+}
+header .action-btn:hover {
+  background: rgb(194, 194, 194);
 }
 
 @media (max-width: 700px) {
@@ -174,7 +181,9 @@ header .action-btn {
     flex-direction: column;
     align-items: flex-start;
     gap: 56px;
-    font-size: 1.875rem;
+  }
+  header nav button {
+    font-size: clamp(1rem, 5vw, 1.875rem);
   }
   header nav .hamburger {
     position: absolute;
@@ -187,8 +196,13 @@ header .action-btn {
     width: 30px;
   }
   header .action-btn {
-    font-size: 1.875rem;
-    padding: 16px 24px;
+    font-size: clamp(1rem, 3vw, 1.875rem);
+    padding: 8px 16px;
+  }
+}
+@media (max-width: 350px) {
+  header nav ul {
+    gap: 16px;
   }
 }
 .hero-container {
@@ -388,7 +402,7 @@ header .action-btn {
   .hero-container {
     font-size: 6.875rem;
     width: 1190px;
-    margin-top: 150px;
+    margin-top: 200px;
   }
   .hero-container .icon {
     padding: 16px;
