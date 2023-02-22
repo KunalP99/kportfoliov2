@@ -2,7 +2,7 @@ import { useState } from 'react';
 import HamburgerMenu from '../images/hamburger.svg';
 import xIcon from '../images/x.svg';
 
-const Header = () => {
+const Header = ({scrollIntoViewOffset}) => {
   const [navIcon, setNavIcon] = useState(HamburgerMenu);
 
   const toggleNav = () => {
@@ -21,13 +21,13 @@ const Header = () => {
     <header id='header'>
       <nav>
         <div className="logo">
-          <h3>KP</h3>
+          <a href="#"><h3>KP</h3></a> 
         </div>
         <div className="navbar-links">
           <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><button onClick={() => scrollIntoViewOffset('#projects', 100)}>Projects</button></li>
+            <li><button>About</button></li>
+            <li><button>Contact</button></li>
             <li><a className='action-btn' href='mailto:kunal_patel200@hotmail.co.uk'>Say Hello 👋</a></li>
           </ul>
         </div>

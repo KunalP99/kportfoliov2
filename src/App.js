@@ -5,10 +5,18 @@ import About from './components/About';
 import Footer from './components/Footer';
 
 function App() {
+  // Scroll to specific selector (e.g. #project, #about) with offset so it doesn't scroll to the top of the selector to account for header taking up space
+  const scrollIntoViewOffset = (selector, offset) => {
+    window.scrollTo({
+      behavior: 'smooth',
+      top: document.querySelector(selector).getBoundingClientRect().top - document.body.getBoundingClientRect().top - offset,
+    });
+  };  
+
   return (
     <div className="container">
-      <Header />
-      <Hero />
+      <Header scrollIntoViewOffset={scrollIntoViewOffset}/>
+      <Hero scrollIntoViewOffset={scrollIntoViewOffset} />
       <div className='content'>
         <div className='quote'>
           <p>

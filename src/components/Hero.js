@@ -7,7 +7,8 @@ import FigmaIcon from '../images/hero/figma-icon.png';
 import CypressIcon from '../images/hero/cypress-icon.png';
 import ArrowDown from '../images/hero/down-arrow.svg';
 
-const Hero = () => {
+const Hero = ({scrollIntoViewOffset}) => {
+
   return (
     <section id='hero'>
       <div className="hero-container">
@@ -37,8 +38,8 @@ const Hero = () => {
       </div>
       <div className='hero-recent-work-container'>
         <p>Take a look at my recent work</p>
-        <button type='button'>
-          <img src={ArrowDown} alt="Scroll down to recent works" onClick={() => document.getElementById('projects').scrollIntoView()} />
+        <button onClick={() => scrollIntoViewOffset('#projects', 100)}>
+          <img src={ArrowDown} alt="Scroll down to recent works" />
         </button> 
       </div>
     </section>
