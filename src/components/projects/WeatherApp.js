@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import BlackLink from '../../images/projects/black-link.svg';
 import WhiteLink from '../../images/projects/white-link.svg';
+import WhiteArrow from '../../images/projects/white-arrow.svg';
 import LaptopMorning from '../../images/projects/weather/laptop-morning.png';
 import LaptopAfternoon from '../../images/projects/weather/laptop-afternoon.png';
 import LaptopEvening from '../../images/projects/weather/laptop-evening.png';
@@ -52,6 +53,7 @@ const WeatherApp = () => {
       <div className="links-container">
         <a className="visit-website-link" href="https://kunalp99.github.io/weather-app-v2/" target='_blank' rel="noreferrer">Visit Website <img className='link-img' src={BlackLink} alt="Visit Weather App website" /></a>
         <a className="github-link" href="https://github.com/KunalP99/weather-app-v2" target='_blank' rel="noreferrer">GitHub  <img className='link-img' src={WhiteLink} alt="Visit Weather App GitHub" /></a>
+        <button>View more<img className='white-arrow' src={WhiteArrow} alt="View more information about games inventory project" /></button>
       </div>
       <img className='weather-app-img' src={img} alt="Laptop displaying weather app" />
     </div>

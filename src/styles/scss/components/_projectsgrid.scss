@@ -20,7 +20,7 @@
     @include flex-center-horiz;
     gap: $spacing-24;
     margin-top: $spacing-32;
-    font-size: pxToRem(15px);
+    font-size: pxToRem(14px);
 
     .link-img {
       width: 20px;
@@ -28,10 +28,10 @@
 
     button {
       @include flex-center-vert;
+      gap: $spacing-08;
       background: transparent;
       border: none;
-      color: white;    
-      font-size: pxToRem(15px);
+      font-size: pxToRem(14px);
     }
   }
 
@@ -49,6 +49,17 @@
 
   h2, p {
     text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .projects-grid-container {
+    .links-container {
+      font-size: pxToRem(20px);
+      button {
+        font-size: pxToRem(20px);
+      }
+    }
   }
 }
 

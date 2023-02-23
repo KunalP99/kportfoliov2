@@ -529,6 +529,9 @@ header .action-btn:hover {
 .games-inventory-card .links-container .github-link {
   color: #FFF;
 }
+.games-inventory-card .links-container button {
+  color: white;
+}
 .games-inventory-card .games-inventory-illustration {
   display: block;
   margin-left: auto;
@@ -664,6 +667,9 @@ header .action-btn:hover {
 .hoodies-card .links-container .github-link {
   color: #FFF;
 }
+.hoodies-card .links-container button {
+  color: white;
+}
 .hoodies-card .hoodies-img {
   position: absolute;
   bottom: -5px;
@@ -742,6 +748,9 @@ header .action-btn:hover {
 .weather-app-card .links-container .github-link {
   color: #FFF;
 }
+.weather-app-card .links-container button {
+  color: white;
+}
 .weather-app-card .weather-app-img {
   position: absolute;
   bottom: 0;
@@ -798,6 +807,9 @@ header .action-btn:hover {
 .on1-card .links-container a {
   color: #AA95F8;
 }
+.on1-card .links-container button {
+  color: black;
+}
 .on1-card .on1-anim {
   display: block;
   margin: 0 auto;
@@ -824,7 +836,7 @@ header .action-btn:hover {
   justify-content: center;
   gap: 24px;
   margin-top: 32px;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
 }
 .projects-grid-container .links-container .link-img {
   width: 20px;
@@ -832,10 +844,10 @@ header .action-btn:hover {
 .projects-grid-container .links-container button {
   display: flex;
   align-items: center;
+  gap: 8px;
   background: transparent;
   border: none;
-  color: white;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
 }
 .projects-grid-container h2 {
   font-weight: 700;
@@ -851,6 +863,14 @@ header .action-btn:hover {
   text-align: center;
 }
 
+@media (min-width: 600px) {
+  .projects-grid-container .links-container {
+    font-size: 1.25rem;
+  }
+  .projects-grid-container .links-container button {
+    font-size: 1.25rem;
+  }
+}
 @media (min-width: 1000px) {
   .projects-grid-container {
     display: grid;

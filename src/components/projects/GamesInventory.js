@@ -15,7 +15,7 @@ const GamesInventory = () => {
       <div className="links-container">
         <a className="visit-website-link" href="https://games-inventory.onrender.com/" target='_blank' rel="noreferrer">Visit Website <img className='link-img' src={OrangeLink} alt="Visit games inventory website" /></a>
         <a className="github-link" href="https://github.com/KunalP99/inventory-management" target='_blank' rel="noreferrer">GitHub  <img className='link-img' src={WhiteLink} alt="Visit games inventory GitHub" /></a>
-        <button>View more<img className='link-img' src={WhiteArrow} alt="View more information about games inventory project" /></button>
+        <button>View more<img className='white-arrow' src={WhiteArrow} alt="View more information about games inventory project" /></button>
       </div>
       <div className='games-inventory-illustration'>
         <img src={InventoryImg1} className="inventory-img-1" alt="Forza Horizon card" />
