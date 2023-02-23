@@ -52,6 +52,15 @@
     }
   }
 }
+@media (max-width: 370px) {
+  .games-inventory-card {
+    .games-inventory-illustration {
+      img {
+        width: 90px;
+      }
+    }
+  }
+}
 
 @media (min-width: 650px) {
   .games-inventory-card {

@@ -113,7 +113,16 @@
     margin-top: $spacing-16;
     cursor: pointer;
   }
+}
 
+@media (max-width: 370px) {
+  .hero-container {
+    font-size: pxToRem(20px);
+    width: auto;
+    .icon {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: 500px) {

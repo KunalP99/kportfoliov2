@@ -311,6 +311,15 @@ header .action-btn:hover {
   cursor: pointer;
 }
 
+@media (max-width: 370px) {
+  .hero-container {
+    font-size: 1.25rem;
+    width: auto;
+  }
+  .hero-container .icon {
+    display: none;
+  }
+}
 @media (min-width: 500px) {
   .hero-container {
     font-size: 2.9375rem;
@@ -555,6 +564,11 @@ header .action-btn:hover {
   transition: width 300ms ease-in-out;
 }
 
+@media (max-width: 370px) {
+  .games-inventory-card .games-inventory-illustration img {
+    width: 90px;
+  }
+}
 @media (min-width: 650px) {
   .games-inventory-card .games-inventory-illustration img {
     width: 180px;
