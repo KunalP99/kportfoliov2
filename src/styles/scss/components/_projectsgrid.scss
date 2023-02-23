@@ -20,6 +20,19 @@
     @include flex-center-horiz;
     gap: $spacing-24;
     margin-top: $spacing-32;
+    font-size: pxToRem(15px);
+
+    .link-img {
+      width: 20px;
+    }
+
+    button {
+      @include flex-center-vert;
+      background: transparent;
+      border: none;
+      color: white;    
+      font-size: pxToRem(15px);
+    }
   }
 
   h2 {
@@ -63,6 +76,14 @@
 
     .links-container {
       font-size: pxToRem(25px);
+
+      .link-img {
+        width: auto;
+      }
+
+      button {
+        font-size: pxToRem(25px);
+      }
     }
   }
 }

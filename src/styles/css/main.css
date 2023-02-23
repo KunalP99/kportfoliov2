@@ -810,6 +810,18 @@ header .action-btn:hover {
   justify-content: center;
   gap: 24px;
   margin-top: 32px;
+  font-size: 0.9375rem;
+}
+.projects-grid-container .links-container .link-img {
+  width: 20px;
+}
+.projects-grid-container .links-container button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 0.9375rem;
 }
 .projects-grid-container h2 {
   font-weight: 700;
@@ -844,6 +856,12 @@ header .action-btn:hover {
     width: 530px;
   }
   .projects-grid-container .links-container {
+    font-size: 1.5625rem;
+  }
+  .projects-grid-container .links-container .link-img {
+    width: auto;
+  }
+  .projects-grid-container .links-container button {
     font-size: 1.5625rem;
   }
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import BlackArrow from '../../images/projects/black-arrow.svg';
-import WhiteArrow from '../../images/projects/white-arrow.svg';
+import BlackLink from '../../images/projects/black-link.svg';
+import WhiteLink from '../../images/projects/white-link.svg';
 import LaptopMorning from '../../images/projects/weather/laptop-morning.png';
 import LaptopAfternoon from '../../images/projects/weather/laptop-afternoon.png';
 import LaptopEvening from '../../images/projects/weather/laptop-evening.png';
@@ -50,8 +50,8 @@ const WeatherApp = () => {
       <h2>Weather App</h2>
       <p>Get the forecast, make a plan, and seize the day.</p>
       <div className="links-container">
-        <a className="visit-website-link" href="https://kunalp99.github.io/weather-app-v2/" target='_blank' rel="noreferrer">Visit Website <img src={BlackArrow} alt="Visit Weather App website" /></a>
-        <a className="github-link" href="https://github.com/KunalP99/weather-app-v2" target='_blank' rel="noreferrer">GitHub  <img src={WhiteArrow} alt="Visit Weather App GitHub" /></a>
+        <a className="visit-website-link" href="https://kunalp99.github.io/weather-app-v2/" target='_blank' rel="noreferrer">Visit Website <img className='link-img' src={BlackLink} alt="Visit Weather App website" /></a>
+        <a className="github-link" href="https://github.com/KunalP99/weather-app-v2" target='_blank' rel="noreferrer">GitHub  <img className='link-img' src={WhiteLink} alt="Visit Weather App GitHub" /></a>
       </div>
       <img className='weather-app-img' src={img} alt="Laptop displaying weather app" />
     </div>
