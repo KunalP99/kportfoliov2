@@ -48,8 +48,8 @@ const WeatherApp = () => {
   
   return (
     <div className="card weather-app-card bg-morning" >
-      <h2>Weather App</h2>
-      <p>Get the forecast, make a plan, and seize the day.</p>
+      <h2 className='project-title'>Weather App</h2>
+      <p className='project-slogan'>Get the forecast, make a plan, and seize the day.</p>
       <div className="links-container">
         <a className="visit-website-link" href="https://kunalp99.github.io/weather-app-v2/" target='_blank' rel="noreferrer">Visit Website <img className='link-img' src={BlackLink} alt="Visit Weather App website" /></a>
         <a className="github-link" href="https://github.com/KunalP99/weather-app-v2" target='_blank' rel="noreferrer">GitHub  <img className='link-img' src={WhiteLink} alt="Visit Weather App GitHub" /></a>

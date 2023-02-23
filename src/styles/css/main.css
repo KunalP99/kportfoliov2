@@ -518,10 +518,15 @@ header .action-btn:hover {
     transform: translateY(0px);
   }
 }
-.games-inventory-card {
+.games-container {
   background: #000000;
-  color: white;
+}
+
+.games-inventory-card {
   padding: 8px;
+}
+.games-inventory-card .project-title, .games-inventory-card .project-slogan {
+  color: white;
 }
 .games-inventory-card .links-container .visit-website-link {
   color: #DD6031;
@@ -654,12 +659,15 @@ header .action-btn:hover {
     transform: rotate(20deg);
   }
 }
-.hoodies-card {
+.hoodies-container {
   background: #282828;
-  color: white;
-  padding-top: 8px;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  padding-top: 8px;
+}
+
+.hoodies-card {
+  color: white;
 }
 .hoodies-card .links-container .visit-website-link {
   color: #ADA6A6;
@@ -849,17 +857,17 @@ header .action-btn:hover {
   border: none;
   font-size: 0.875rem;
 }
-.projects-grid-container h2 {
+.projects-grid-container .project-title {
   font-weight: 700;
   font-size: clamp(1.5625rem, 3.2vw, 4rem);
   margin-top: 32px;
   margin-bottom: 16px;
 }
-.projects-grid-container p {
+.projects-grid-container .project-slogan {
   font-size: clamp(0.9375rem, 2vw, 1.875rem);
   padding: 0px 40px;
 }
-.projects-grid-container h2, .projects-grid-container p {
+.projects-grid-container .project-title, .projects-grid-container .project-slogan {
   text-align: center;
 }
 
@@ -881,11 +889,11 @@ header .action-btn:hover {
   }
 }
 @media (min-width: 1500px) {
-  .projects-grid-container h2 {
+  .projects-grid-container .project-title {
     margin-top: 56px;
     margin-bottom: 32px;
   }
-  .projects-grid-container p {
+  .projects-grid-container .project-slogan {
     margin: 0 auto;
     width: 530px;
   }
@@ -999,6 +1007,57 @@ header .action-btn:hover {
     padding-left: 250px;
   }
 }
+.modal-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.6431372549);
+  top: 0;
+  z-index: 105;
+}
+.modal-container .x-btn {
+  position: absolute;
+  right: 24px;
+  top: 10px;
+  background: transparent;
+  border: none;
+}
+.modal-container .x-btn img {
+  width: 20px;
+}
+.modal-container .modal {
+  position: fixed;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  z-index: 106;
+}
+.modal-container .modal h2 {
+  padding: 24px 24px 0px 24px;
+  font-size: clamp(1.375rem, 4vw, 4rem);
+  font-weight: 600;
+}
+.modal-container .modal .tech-stack {
+  padding: 16px 24px;
+  font-size: clamp(1rem, 2vw, 1.875rem);
+}
+.modal-container .modal .underline {
+  width: 100%;
+  height: 2px;
+  background: #D7D7D7;
+}
+.modal-container .modal .modal-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+.modal-container .modal .modal-content-container p {
+  margin-top: 24px;
+}
+.modal-container .modal .tech-stack, .modal-container .modal h2, .modal-container .modal p {
+  text-align: left;
+}
+
 footer {
   background: #252525;
   color: white;

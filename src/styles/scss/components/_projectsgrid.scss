@@ -35,19 +35,19 @@
     }
   }
 
-  h2 {
+  .project-title {
     font-weight: $bold;
     font-size: clamp(pxToRem(25px), 3.2vw, pxToRem(64px));
     margin-top: $spacing-32;
     margin-bottom: $spacing-16;
   }
  
-  p {
+  .project-slogan {
     font-size: clamp(pxToRem(15px), 2vw, pxToRem(30px));
     padding: 0px $spacing-40;
   }
 
-  h2, p {
+  .project-title, .project-slogan {
     text-align: center;
   }
 }
@@ -75,12 +75,12 @@
 
 @media (min-width: 1500px) {
   .projects-grid-container {
-    h2 {
+    .project-title {
       margin-top: $spacing-56;
       margin-bottom: $spacing-32;
     }
 
-    p {
+    .project-slogan {
       margin: 0 auto;
       width: 530px;
     }

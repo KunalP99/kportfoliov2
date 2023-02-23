@@ -1,9 +1,12 @@
-.hoodies-card {
+.hoodies-container {
   background: #282828;
-  color: white;
-  padding-top: $spacing-08;
-  position: relative;
   overflow: hidden;
+  position: relative;
+  padding-top: $spacing-08;
+}
+
+.hoodies-card {
+  color: white;
 
   .links-container {
     .visit-website-link {

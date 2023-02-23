@@ -1,7 +1,13 @@
-.games-inventory-card {
+.games-container {
   background: #000000;
-  color: white;
+}
+
+.games-inventory-card {
   padding: $spacing-08;
+
+  .project-title, .project-slogan {
+    color: white;
+  }
 
   .links-container {
     .visit-website-link {
