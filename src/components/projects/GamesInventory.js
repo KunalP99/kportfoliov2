@@ -1,15 +1,14 @@
 import OrangeLink from '../../images/projects/orange-link.svg';
 import WhiteLink from '../../images/projects/white-link.svg';
 import WhiteArrow from '../../images/projects/white-arrow.svg';
-import ProjectsModal from '../ProjectsModal';
-import projectsInfo from '../../information/projectsInfo';
 
 // Images
 import InventoryImg1 from '../../images/projects/inventory/inventory-img-1.png';
 import InventoryImg2 from '../../images/projects/inventory/inventory-img-2.png';
 import InventoryImg3 from '../../images/projects/inventory/inventory-img-3.png';
 
-const GamesInventory = ({showModal, setShowModal}) => {
+
+const GamesInventory = ({setShowModal}) => {
   return (
     <div className='games-container'>
       <div className="games-inventory-card">
@@ -26,8 +25,6 @@ const GamesInventory = ({showModal, setShowModal}) => {
           <img src={InventoryImg3} className="inventory-img-3"  alt="Hogwarts Legacy card" />
         </div>
       </div>
-      {/* Pass in props from projectsInfo at position 0 */}
-      {showModal && <ProjectsModal info={projectsInfo[0]} setShowModal={setShowModal} />}
     </div>
   );
 };
