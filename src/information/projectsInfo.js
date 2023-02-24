@@ -1,9 +1,11 @@
+import gamesVideo from '../images/modals/videos/games-inventory.mp4';
+
 const projectsInfo = [
   {
     id: 1,
     title: 'Games Inventory',
     link: 'https://games-inventory.onrender.com/',
-    videoPath: '/static/media/games-inventory.a5e7cf9a5c85ae16dc50.mp4',
+    videoPath: gamesVideo,
     skills: [
       {
         name: 'React',
