@@ -8,7 +8,7 @@ import InventoryImg2 from '../../images/projects/inventory/inventory-img-2.png';
 import InventoryImg3 from '../../images/projects/inventory/inventory-img-3.png';
 
 
-const GamesInventory = ({setShowModal}) => {
+const GamesInventory = ({setShowModal, setModalNum}) => {
   return (
     <div className='games-container'>
       <div className="games-inventory-card">
@@ -17,7 +17,10 @@ const GamesInventory = ({setShowModal}) => {
         <div className="links-container">
           <a className="visit-website-link" href="https://games-inventory.onrender.com/" target='_blank' rel="noreferrer">Visit Website <img className='link-img' src={OrangeLink} alt="Visit games inventory website" /></a>
           <a className="github-link" href="https://github.com/KunalP99/inventory-management" target='_blank' rel="noreferrer">GitHub  <img className='link-img' src={WhiteLink} alt="Visit games inventory GitHub" /></a>
-          <button onClick={() => setShowModal(true)}>View more<img className='white-arrow' src={WhiteArrow} alt="View more information about games inventory project" /></button>
+          <button onClick={() => {
+            setShowModal(true);
+            setModalNum(0);
+          }}>View more<img className='white-arrow' src={WhiteArrow} alt="View more information about games inventory project" /></button>
         </div>
         <div className='games-inventory-illustration'>
           <img src={InventoryImg1} className="inventory-img-1" alt="Forza Horizon card" />

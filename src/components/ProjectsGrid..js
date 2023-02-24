@@ -8,17 +8,17 @@ import projectsInfo from '../information/projectsInfo';
 
 const ProjectsGrid = () => {
   const [showModal, setShowModal] = useState(false);
+  const [modalNum, setModalNum] = useState(null); // Pass to all projects component to display correct data on the modal
 
   return (
     <div>
       <section className="projects-grid-container" id='projects'>
-        <GamesInventory setShowModal={setShowModal}/>
-        <Hoodies setShowModal={setShowModal}/>
-        <WeatherApp setShowModal={setShowModal}/>
-        <On1Solutions setShowModal={setShowModal}/>
+        <GamesInventory setShowModal={setShowModal} setModalNum={setModalNum}/>
+        <Hoodies setShowModal={setShowModal} setModalNum={setModalNum}/>
+        <WeatherApp setShowModal={setShowModal} setModalNum={setModalNum}/>
+        <On1Solutions setShowModal={setShowModal} setModalNum={setModalNum}/>
       </section>
-      {/* Figure out how to change this number React Context???*/}
-      {showModal && <ProjectsModal info={projectsInfo[0]} setShowModal={setShowModal}/>}
+      {showModal && <ProjectsModal info={projectsInfo[modalNum]} setShowModal={setShowModal}/>}
     </div>
 
   );
