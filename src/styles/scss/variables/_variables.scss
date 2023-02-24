@@ -21,6 +21,8 @@ $react-bg-colour: linear-gradient(45deg, #D6D6D6 5.65%, rgba(208, 245, 255, 0.2)
 $figma-bg-colour: linear-gradient(44.58deg, rgba(162, 89, 255, 0.14) 7.05%, rgba(162, 89, 255, 0.61) 94.35%);
 $cypress-bg-colour: linear-gradient(45deg, #6FD3A7 5.65%, rgba(255, 255, 255, 0.2) 94.35%);
 
+$line-height: 45px;
+
 // Functions
 // Converts pixel to rem
 @function pxToRem($pxValue) {

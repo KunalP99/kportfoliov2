@@ -5,11 +5,12 @@
   z-index: 105;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 
   .x-btn {
     position: absolute;
     right: 24px;
-    top: 10px;
+    top: 24px;
     background: transparent;
     border: none;
 
@@ -24,14 +25,14 @@
     width: 100vw;
     height: 100vh;
     z-index: 106;
-    overflow-y: scroll;
-
+    overflow: auto;
+    
     a {
       text-decoration: none;
 
-      h3 {
+      h2 {
         padding: $spacing-24 $spacing-24 0px $spacing-24;
-        font-size: clamp(pxToRem(22px), 4vw, pxToRem(64px));
+        font-size: clamp(pxToRem(22px), 6vw, pxToRem(54px));
         font-weight: $semi-bold;
       }
     }
@@ -40,7 +41,16 @@
       padding: $spacing-16 $spacing-24;
       display: flex;
       gap: $spacing-16;
-      font-size: clamp(pxToRem(16px), 2vw, pxToRem(30px));
+      flex-wrap: wrap;
+      font-size: clamp(pxToRem(16px), 2vw, pxToRem(23px));
+    }
+
+    .skill-container {
+      background-color: #bdd3c7;
+      padding: 6px $spacing-16;
+      border-radius: 20px;
+      text-align: center;
+      color: rgb(84, 84, 84);
     }
 
     .underline {
@@ -48,32 +58,44 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 5px;
       height: 2px;
-      background: #D7D7D7;
+      background: #ececec;
     }
 
     .modal-content-container {
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       padding: $spacing-24;
 
-      iframe {
-        width: "100%"; 
-        height: "auto"
+      video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $spacing-32;
+        width: 80vw; 
+        height: auto;
       }
 
       h3 {
         margin-bottom: $spacing-08;
-        font-size: clamp(pxToRem(22px), 4vw, pxToRem(32px));
+        font-size: clamp(pxToRem(22px), 4vw, pxToRem(40px));
         font-weight: $medium;
       }
 
       p, li {
-        font-size: clamp(pxToRem(16px), 4vw, pxToRem(20px));
+        font-size: clamp(pxToRem(16px), 4vw, pxToRem(25px));
+        line-height: $line-height;
+      }
+
+      li {
+        margin-left: $spacing-24;
+        margin-top: $spacing-16;
+        list-style-position: outside;
       }
 
       .summary-container, .learned-container {
-        margin: $spacing-24 0px;
+        margin: $spacing-32 0px;
       }
 
       .features-container {
@@ -88,50 +110,77 @@
   }
 }
 
-@media (min-width: 500px) {
-  .modal-container {
-    .modal {
-      .modal-content-container {
-        iframe {
-          height: 300px;
-        }
-      }
-    }
-  }
-}
-
 @media (min-width: 1000px) {
   .modal-container {
     .modal {
         max-width: 1200px;
-        max-height: 800px;
+        height: 100vh;
         top: 50%; 
         left: 50%;
         transform: translate(-50%, -50%);
-        overflow-y: hidden;
-        border-radius: 16px;
+
+      .x-btn {
+          img {
+            width: 40px;
+          }
+        }
+
+      a {
+        h2 {
+          padding: $spacing-56 $spacing-56 0px $spacing-56;
+        }
+      }
+
+      .tech-stack-container {
+        padding: $spacing-32 60px;
+        margin-bottom: $spacing-24;
+      }
+
+      .skill-container {
+        padding: $spacing-08 $spacing-16;
+      }
         
       .modal-content-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
+        padding: 0px;
 
-        iframe {
-          width: 550px;
-          height: 350px;
-          margin-left: $spacing-24;
+        h3 {
+          margin-bottom: $spacing-40;
+        }
+
+        .summary-container {
+          margin: $spacing-24 0px $spacing-72 0px;
+        }
+        .features-container {
+          margin-top: $spacing-72;
+        }
+        .learned-container {
+          margin: $spacing-56 0px;
+        }
+        
+
+        .modal-left-container {
+          padding: $spacing-08 $spacing-56;
+        }
+
+        video {
+          width: 70%;
+          height: 400px;
         }
       }
     }
   }
 }
+
 @media (min-width: 1600px) {
   .modal-container {
     .modal {
+      max-width: 1500px;
+      max-height: 2000px;
+
       .modal-content-container {
-        iframe {
-          width: 600px;
-          height: 400px;
+        video {
+          width: 80%;
+          height: 630px;
         }
       }
     }

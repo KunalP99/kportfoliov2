@@ -1,26 +1,29 @@
-/*       ['React', '#41C4E8'],
-      ['SASS', '#CD6799'] */
 const projectsInfo = [
   {
     id: 1,
-    title: 'GamesInventory',
+    title: 'Games Inventory',
     link: 'https://games-inventory.onrender.com/',
+    videoPath: '/static/media/games-inventory.a5e7cf9a5c85ae16dc50.mp4',
     skills: [
       {
         name: 'React',
-        color: '#41C4E8'
+        colour: '#41C4E8',
+        tagColour: '#e4f3f8'
       },
       {
         name: 'SASS',
-        color: '#CD6799'
+        colour: '#CD6799',
+        tagColour: '#F6E4ED'
       },
       {
         name: 'Express',
-        color: '353535'
+        colour: '#353535',
+        tagColour: '#F5F5F5'
       },
       {
         name: 'MongoDB',
-        color: '#12924F'
+        colour: '#12924F',
+        tagColour: '#E5F6EA'
       }
     ],
     summary: 'An inventory management application for games that lets you add games to a database, and for that data to be displayed on screen.',
