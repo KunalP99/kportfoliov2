@@ -3,6 +3,8 @@
   background-color: #000000a4;
   top: 0;
   z-index: 105;
+  width: 100vw;
+  height: 100vh;
 
   .x-btn {
     position: absolute;
@@ -22,38 +24,117 @@
     width: 100vw;
     height: 100vh;
     z-index: 106;
+    overflow-y: scroll;
 
-    h2 {
-      padding: $spacing-24 $spacing-24 0px $spacing-24;
-      font-size: clamp(pxToRem(22px), 4vw, pxToRem(64px));
-      font-weight: $semi-bold;
+    a {
+      text-decoration: none;
+
+      h3 {
+        padding: $spacing-24 $spacing-24 0px $spacing-24;
+        font-size: clamp(pxToRem(22px), 4vw, pxToRem(64px));
+        font-weight: $semi-bold;
+      }
     }
 
-    .tech-stack {
+    .tech-stack-container {
       padding: $spacing-16 $spacing-24;
+      display: flex;
+      gap: $spacing-16;
       font-size: clamp(pxToRem(16px), 2vw, pxToRem(30px));
     }
 
     .underline {
-      width: 100%;
+      width: 96%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       height: 2px;
       background: #D7D7D7;
     }
 
     .modal-content-container {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      flex-direction: column-reverse;
       padding: $spacing-24;
 
-      p {
-        margin-top: $spacing-24;
+      iframe {
+        width: "100%"; 
+        height: "auto"
       }
-    }
 
-    .tech-stack, h2, p {
-      text-align: left;
+      h3 {
+        margin-bottom: $spacing-08;
+        font-size: clamp(pxToRem(22px), 4vw, pxToRem(32px));
+        font-weight: $medium;
+      }
+
+      p, li {
+        font-size: clamp(pxToRem(16px), 4vw, pxToRem(20px));
+      }
+
+      .summary-container, .learned-container {
+        margin: $spacing-24 0px;
+      }
+
+      .features-container {
+        ul {
+          list-style: inside;
+          li {
+            margin-bottom: $spacing-08;
+          }
+        }
+      }
     }
   }
 }
+
+@media (min-width: 500px) {
+  .modal-container {
+    .modal {
+      .modal-content-container {
+        iframe {
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .modal-container {
+    .modal {
+        max-width: 1200px;
+        max-height: 800px;
+        top: 50%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow-y: hidden;
+        border-radius: 16px;
+        
+      .modal-content-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+
+        iframe {
+          width: 550px;
+          height: 350px;
+          margin-left: $spacing-24;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .modal-container {
+    .modal {
+      .modal-content-container {
+        iframe {
+          width: 600px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+

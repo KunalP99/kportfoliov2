@@ -5,12 +5,36 @@ const ProjectsModal = ({info, setShowModal}) => {
     <div className="modal-container">
       <div className="modal">
         <button className='x-btn' onClick={() => setShowModal(false)}><img src={xIcon} alt="Close modal" /></button>
-        <h2>{info.title}</h2>
-        <p className="tech-stack"><span>React</span>/<span>SASS</span>/ <span>MongoDB</span></p>
+        <a href={info.link} target='_blank' rel="noreferrer"><h3>{info.title}</h3></a>
+        <div className='tech-stack-container'>
+          {info.skills.map((skill, index) => {
+            return <p key={index} style={{color: `${skill.color}`}}>{skill.name}</p>;
+          })}
+        </div>
+
         <div className="underline"></div>
         <div className="modal-content-container">
-          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/cT7Uf30-szg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui impedit voluptatum enim itaque repellendus amet, mollitia hic? Fugiat veritatis ipsa dolor harum porro, quisquam, tempore adipisci tenetur alias mollitia perspiciatis?</p>
+          <div className='modal-left-container'>
+            <div className='summary-container'>
+              <h3>Summary</h3>
+              <p>{info.summary}</p>
+            </div>
+            <div className='features-container'>
+              <h3>Features</h3>
+              {info.features && 
+                <ul>
+                  {info.features.map(feature => {
+                    return <li key={feature}>{feature}</li>;
+                  })}
+                </ul>
+              }
+            </div>
+            <div className='learned-container'>
+              <h3>What I learned</h3>
+              <p>{info.learned}</p>
+            </div>
+          </div>
+          <iframe src="https://www.youtube.com/embed/cT7Uf30-szg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
         </div>
       </div>
     </div>
