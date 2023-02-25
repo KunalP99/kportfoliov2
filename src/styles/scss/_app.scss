@@ -12,13 +12,13 @@ html {
 
   .content {
     font-family: $main-font-family;
-    // margin-top: 50px;
     width: 100%;
 
     .quote {
       text-align: center;
       padding: $spacing-40;
       font-weight: $regular;
+      line-height: 38px;
       span {
         color: #6BA6FF
       }
@@ -44,7 +44,8 @@ html {
     .content {
       .quote {
         padding: $spacing-40 $spacing-112;
-        font-size: pxToRem(25px)
+        font-size: pxToRem(25px);
+        line-height: $line-height;
       }
     }
   }
@@ -56,6 +57,7 @@ html {
       .quote {
         padding: $spacing-40 150px;
         font-size: pxToRem(35px);
+        line-height: 60px;
       }
     }
   }
@@ -67,6 +69,7 @@ html {
       .quote {
         padding: $spacing-120 250px;
         font-size: pxToRem(42px);
+        line-height: 70px;
       }
     }
   }

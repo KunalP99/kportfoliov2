@@ -11,6 +11,7 @@
   > p {
     margin-top: $spacing-16;
     font-size: clamp(pxToRem(15px), 2vw, pxToRem(30px));
+    line-height: 33px;
   }
 
   > h2, > p {
@@ -69,6 +70,9 @@
 
 @media (min-width: 1200px) {
   .about-container {
+    > p {
+      line-height: $line-height;
+    }
    > h2, > p {
       padding-left: 150px;
     }
