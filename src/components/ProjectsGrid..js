@@ -7,7 +7,7 @@ import ProjectsModal from './ProjectsModal';
 import projectsInfo from '../information/projectsInfo';
 
 const ProjectsGrid = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false); // Pass to all projects component to show modal when 'View more' is clicked
   const [modalNum, setModalNum] = useState(null); // Pass to all projects component to display correct data on the modal
 
   return (

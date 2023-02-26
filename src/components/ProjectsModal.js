@@ -4,6 +4,7 @@ import blackXicon from '../images/black-x.svg';
 import whiteXicon from '../images/white-x.svg';
 
 const ProjectsModal = ({info, setShowModal}) => {
+  // Grabs dark theme value from ThemeContext
   const darkTheme = useContext(ThemeContext);
 
   return (

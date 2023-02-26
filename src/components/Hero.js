@@ -8,7 +8,6 @@ import CypressIcon from '../images/hero/cypress-icon.png';
 import ArrowDown from '../images/hero/down-arrow.svg';
 
 const Hero = ({scrollIntoViewOffset}) => {
-
   return (
     <section id='hero'>
       <div className="hero-container">

@@ -26,6 +26,7 @@ const About = () => {
       <h2>About Me</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero dolor culpa recusandae illo illum reiciendis quisquam explicabo amet possimus! Quibusdam minima quisquam temporibus ex magni. Dignissimos similique ut aperiam?</p>
 
+      {/* Creates an infinite slider with autoplay  */}
       <Swiper
         loop={true}
         centeredSlides={true}

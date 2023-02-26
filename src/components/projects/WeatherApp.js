@@ -14,6 +14,7 @@ const WeatherApp = ({setShowModal, setModalNum}) => {
   useEffect(() => {
     const weatherAppCard = document.querySelector('.weather-app-card');
 
+    // Changes background of weather card every 5 seconds by adding a class with a specific style
     const bgInterval = setInterval(() => {
       if (weatherAppCard.classList.contains('bg-morning')) {
         // To Afternoon

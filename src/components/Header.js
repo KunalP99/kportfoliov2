@@ -9,7 +9,8 @@ const Header = ({scrollIntoViewOffset, toggleTheme}) => {
   const [navIcon, setNavIcon] = useState(HamburgerMenu);
   const darkTheme = useContext(ThemeContext);
   const [themeImg, setThemeImg] = useState(DarkMode);
-
+  
+  // Toggle navbar and change hamburger icon to xIcon and vice versa
   const toggleNav = () => {
     // Change hamburger menu to x icon and vice versa
     if (navIcon !== HamburgerMenu) {
@@ -22,7 +23,7 @@ const Header = ({scrollIntoViewOffset, toggleTheme}) => {
     navbarLinks.classList.toggle('active');
   };
 
-  // * TODO: Add dark mode icon and switch between moon and sun or similiar
+  // Toggles between dark mode and light mode
   const toggleDarkMode = () => {
     const html = document.querySelector('html');
     if (darkTheme){

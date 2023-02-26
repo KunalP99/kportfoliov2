@@ -19,7 +19,7 @@ const Interests = () => {
     // Show initial image
     iconInterests.src = imgArr[0];
     
-    // Set image every x seconds by changing src of img 
+    // Set image every 1 second by changing src of img 
     const interestsImgInterval = setInterval(() => {
       // Set img src to img in position i of array 
       iconInterests.src = imgArr[i];
