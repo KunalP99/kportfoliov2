@@ -1,12 +1,16 @@
 import { useEffect } from 'react';
 import BbIcon from '../images/interests/bb.png';
 import LegoIcon from '../images/interests/lego.png';
-import ControllerIcon from '../images/interests/controller.png';
-import YouTubeIcon from '../images/interests/youtube.png';
+import SteamIcon from '../images/interests/steam.png';
 import FoodIcon from '../images/interests/food.png';
+import CocaColaIcon from '../images/interests/coca-cola.png';
+import VegasIcon from '../images/interests/vegas.png';
+import NeptuneIcon from '../images/interests/neptune.png';
+import WheelIcon from '../images/interests/wheel.png';
+import UniqloIcon from '../images/interests/uniqlo.png';
 
 const Interests = () => {
-  const imgArr = [BbIcon, LegoIcon, ControllerIcon, YouTubeIcon, FoodIcon];
+  const imgArr = [BbIcon, LegoIcon, SteamIcon, FoodIcon, CocaColaIcon, VegasIcon,NeptuneIcon, WheelIcon, UniqloIcon];
 
   useEffect(() => {
     const iconInterests = document.querySelector('.interests-icon');
