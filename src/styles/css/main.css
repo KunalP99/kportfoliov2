@@ -311,7 +311,7 @@ header .action-btn:hover {
 }
 .hero-recent-work-container img {
   width: 30px;
-  margin-top: 16px;
+  margin-top: 32px;
   cursor: pointer;
 }
 
@@ -951,9 +951,9 @@ header .action-btn:hover {
 .about-container > h2 {
   font-size: clamp(1.875rem, 3vw, 3.75rem);
   font-weight: 600;
+  margin-bottom: 16px;
 }
 .about-container > p {
-  margin-top: 16px;
   font-size: clamp(0.9375rem, 2vw, 1.875rem);
   line-height: 33px;
 }
@@ -981,6 +981,10 @@ header .action-btn:hover {
 }
 .about-container .swiper-wrapper {
   transition-timing-function: linear;
+}
+
+.about-container p:nth-child(n+2) {
+  margin-bottom: 40px;
 }
 
 @media (min-width: 700px) {

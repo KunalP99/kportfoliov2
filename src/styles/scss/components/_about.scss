@@ -6,10 +6,10 @@
    > h2 {
     font-size: clamp(pxToRem(30px), 3vw, pxToRem(60px));
     font-weight: $semi-bold;
+    margin-bottom: $spacing-16;
   } 
 
   > p {
-    margin-top: $spacing-16;
     font-size: clamp(pxToRem(15px), 2vw, pxToRem(30px));
     line-height: 33px;
   }
@@ -46,6 +46,11 @@
     -o-transition-timing-function:linear;
     transition-timing-function:linear; 
   }
+}
+
+// Select all but the first p tag in the container
+.about-container p:nth-child(n+2) {
+  margin-bottom: $spacing-40;
 }
 
 @media (min-width: 700px) {
