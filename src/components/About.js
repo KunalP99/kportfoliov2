@@ -24,7 +24,10 @@ const About = () => {
   return (
     <section id='about' className="about-container">
       <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero dolor culpa recusandae illo illum reiciendis quisquam explicabo amet possimus! Quibusdam minima quisquam temporibus ex magni. Dignissimos similique ut aperiam?</p>
+      <p>Upon completing my degree in Computer Science from Brunel University, I discovered a keen interest in Web Development. I was fascinated by the challenge of building user-friendly and visually appealing websites.</p>
+      <p>After several months of dedicated study, I started my first position as a freelance Frontend Developer at On1 Solutions. During my time there, I successfully applied my knowledge to develop a complete website.</p>
+      <p>Motivated to expand my skillset, I embarked on learning React and more recently, I have been exploring Express and MongoDB.</p>
+      <p>Dedicated to this craft, I am excited to continue on this journey and see what more this field has to offer.</p>
 
       {/* Creates an infinite slider with autoplay  */}
       <Swiper
