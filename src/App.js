@@ -30,7 +30,7 @@ function App() {
         <div className='content'>
           <div className='quote'>
             <p>
-              <span>&quot;</span>My passion for web development runs deep, and I&apos;m constantly exploring the latest tools and technologies to stay ahead of the curve. From designing responsive layouts to writing clean, efficient code, I&apos;m always striving to deliver the best possible user experience.<span>&quot;</span>
+              <span>&quot;</span>I am a passionate web developer, with the ability to create responsive, aesthetic websites using a range of the latest tools and technologies. I am always seeking opportunities to expand my skill set, and I thrive on the new and exciting challenges that come with this field.<span>&quot;</span>
             </p>
           </div>
           <ProjectsGrid />
