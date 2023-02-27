@@ -36,7 +36,7 @@ function App() {
           <ProjectsGrid />
           <About />
         </div>
-        <Footer />
+        <Footer scrollIntoViewOffset={scrollIntoViewOffset} />
       </div>
     </ThemeContext.Provider>
   );

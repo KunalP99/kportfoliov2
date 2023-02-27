@@ -2,12 +2,12 @@ import UpArrow from '../images/footer/up-arrow.svg';
 import GitHubIcon from '../images/footer/github-icon.svg';
 import LinkedInIcon from '../images/footer/linkedin-icon.svg';
 
-const Footer = () => {
+const Footer = ({scrollIntoViewOffset}) => {
   return (
     <footer>
       <div className='back-to-top'>
-        <button type='button'>
-          <img src={UpArrow} alt="Scroll back to the top" onClick={() => document.getElementById('header').scrollIntoView()}/>
+        <button onClick={() => scrollIntoViewOffset('#header', 9000)} type='button'>
+          <img src={UpArrow} alt="Scroll back to the top" />
         </button> 
       </div>
       <div className='social-links-container'>
