@@ -6,7 +6,7 @@ const Footer = ({scrollIntoViewOffset}) => {
   return (
     <footer>
       <div className='back-to-top'>
-        <button onClick={() => scrollIntoViewOffset('#header', 9000)} type='button'>
+        <button onClick={() => scrollIntoViewOffset('#hero', 300)} type='button'>
           <img src={UpArrow} alt="Scroll back to the top" />
         </button> 
       </div>
