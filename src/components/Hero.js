@@ -13,25 +13,25 @@ const Hero = ({scrollIntoViewOffset}) => {
       <div className="hero-container">
         <h1 className='hero-name'>Kunal Patel</h1>
         <h1 className='hero-role'>Web Developer</h1>
-        <div className='icon html-icon'>
+        <div className='icon html-icon' title='HTML'>
           <img className='html-img' src={HtmlIcon} alt="HTML icon" />
         </div>
-        <div className='icon css-icon'>
+        <div className='icon css-icon' title='CSS'>
           <img className='css-img' src={CssIcon} alt="CSS icon" />
         </div>
-        <div className='icon js-icon'>
+        <div className='icon js-icon' title='JavaScript'>
           <img className='js-img' src={JsIcon} alt="JavaScript icon" />     
         </div>
-        <div className='icon sass-icon'>
+        <div className='icon sass-icon' title='SASS'>
           <img className='sass-img' src={SassIcon} alt="SASS icon" />
         </div>
-        <div className='icon react-icon'>
+        <div className='icon react-icon' title='React'>
           <img className='react-img' src={ReactIcon} alt="React icon" />
         </div>
-        <div className='icon figma-icon'>
+        <div className='icon figma-icon' title='Figma'>
           <img className='figma-img' src={FigmaIcon} alt="Figma icon" />
         </div>
-        <div className='icon cypress-icon'>
+        <div className='icon cypress-icon' title='Cypress'>
           <img className='cypress-img' src={CypressIcon} alt="Cypress icon" />
         </div>
       </div>
