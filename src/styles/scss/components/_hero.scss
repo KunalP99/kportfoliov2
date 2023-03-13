@@ -75,8 +75,8 @@
     animation: float-small-screen 4s ease-in-out 0s infinite forwards;
   }
 
-  .figma-icon {
-    background: $figma-bg-colour;
+  .git-icon {
+    background: $git-bg-colour;
     bottom: -25px;
     right: 75px;
     z-index: 4;
@@ -163,7 +163,7 @@
       right: 175px;
     }
 
-    .figma-icon {
+    .git-icon {
       bottom: -30px;
       right: 100px;
     }
@@ -218,7 +218,7 @@
       animation: float 4s ease-in-out 0s infinite forwards;
     }
 
-    .figma-icon {
+    .git-icon {
       bottom: -45px;
       right: 150px;
       animation: float 4s ease-in-out 0.8s infinite forwards;
@@ -270,7 +270,7 @@
       right: 440px;
     }
 
-    .figma-icon {
+    .git-icon {
       bottom: -70px;
       right: 270px;
     }
@@ -329,7 +329,7 @@
       right: 610px;
     }
 
-    .figma-icon {
+    .git-icon {
       bottom: -90px;
       right: 380px;
     }
