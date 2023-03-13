@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/kportfoliov2/static/css/main.09566b3a.css",
-    "main.js": "/kportfoliov2/static/js/main.8980bc3a.js",
+    "main.css": "/kportfoliov2/static/css/main.efe48956.css",
+    "main.js": "/kportfoliov2/static/js/main.8ad751ab.js",
     "static/media/about-vid-1.mp4": "/kportfoliov2/static/media/about-vid-1.d2dbf95804aec991326f.mp4",
     "static/media/about-vid-2.mp4": "/kportfoliov2/static/media/about-vid-2.c79c0e30921994afc9ad.mp4",
     "static/media/on1-solutions.mp4": "/kportfoliov2/static/media/on1-solutions.c6afac9ebe55e1651b08.mp4",
@@ -49,11 +49,11 @@
     "static/media/black-x.svg": "/kportfoliov2/static/media/black-x.70648932e360caa0ad38ac6bfa86d347.svg",
     "static/media/white-x.svg": "/kportfoliov2/static/media/white-x.7d45d82cc849c462fabf3645360d7c31.svg",
     "static/media/hamburger.svg": "/kportfoliov2/static/media/hamburger.aae6d0a79cbd767ee2d14b0a4163d2ce.svg",
-    "main.09566b3a.css.map": "/kportfoliov2/static/css/main.09566b3a.css.map",
-    "main.8980bc3a.js.map": "/kportfoliov2/static/js/main.8980bc3a.js.map"
+    "main.efe48956.css.map": "/kportfoliov2/static/css/main.efe48956.css.map",
+    "main.8ad751ab.js.map": "/kportfoliov2/static/js/main.8ad751ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.09566b3a.css",
-    "static/js/main.8980bc3a.js"
+    "static/css/main.efe48956.css",
+    "static/js/main.8ad751ab.js"
   ]
 }
