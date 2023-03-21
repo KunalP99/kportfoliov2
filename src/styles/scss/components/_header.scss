@@ -7,6 +7,7 @@ header {
 
   a {
     text-decoration: none;
+    color: white;
   }
 
   h3 {
@@ -33,13 +34,13 @@ header {
       gap: $spacing-32;
     }
 
-    button {
+    button, .cv-btn {
       background: transparent;
       border: none;
       color: white;
       font-size: pxToRem(16px);
     }
-    button:hover {
+    button:hover, .cv-btn:hover {
       color: rgb(194, 194, 194);
     }
   }
@@ -86,7 +87,7 @@ header {
         align-items: flex-start;
         gap: $spacing-56;
       }
-      button {
+      button, .cv-btn {
         font-size: clamp(pxToRem(16px), 5vw, pxToRem(30px));
       }
       

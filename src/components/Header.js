@@ -49,6 +49,7 @@ const Header = ({scrollIntoViewOffset, toggleTheme}) => {
           <ul>
             <li><button type='button' onClick={() => scrollIntoViewOffset('#projects', 100)}>Projects</button></li>
             <li><button type='button' onClick={() => scrollIntoViewOffset('#about', 100)}>About</button></li>
+            <li><a className='cv-btn' href='https://drive.google.com/file/d/1NBamYm6sunKIGy8fuAjeGWqw1d-DnAU_/view' target='_blank' rel='noreferrer'>CV</a></li>
             <li><a className='action-btn' href='mailto:kunal_patel200@hotmail.co.uk'>Say Hello 👋</a></li>
             <li><button onClick={toggleDarkMode}><img src={themeImg} alt="Click to change theme of website" /></button></li>
           </ul>

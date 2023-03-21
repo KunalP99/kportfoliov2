@@ -114,6 +114,7 @@ header {
 }
 header a {
   text-decoration: none;
+  color: white;
 }
 header h3 {
   font-family: "Michroma", sans-serif;
@@ -138,13 +139,13 @@ header nav ul {
   align-items: center;
   gap: 32px;
 }
-header nav button {
+header nav button, header nav .cv-btn {
   background: transparent;
   border: none;
   color: white;
   font-size: 1rem;
 }
-header nav button:hover {
+header nav button:hover, header nav .cv-btn:hover {
   color: rgb(194, 194, 194);
 }
 header .action-btn {
@@ -186,7 +187,7 @@ header .action-btn:hover {
     align-items: flex-start;
     gap: 56px;
   }
-  header nav button {
+  header nav button, header nav .cv-btn {
     font-size: clamp(1rem, 5vw, 1.875rem);
   }
   header nav .hamburger {
