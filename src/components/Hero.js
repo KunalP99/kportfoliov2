@@ -4,7 +4,7 @@ import JsIcon from '../images/hero/js-icon.png';
 import SassIcon from '../images/hero/sass-icon.png';
 import ReactIcon from '../images/hero/react-icon.png';
 import GitIcon from '../images/hero/git-icon.png';
-import CypressIcon from '../images/hero/cypress-icon.png';
+import TypescriptIcon from '../images/hero/typescript-icon.png';
 import ArrowDown from '../images/hero/down-arrow.svg';
 
 const Hero = ({scrollIntoViewOffset}) => {
@@ -31,8 +31,8 @@ const Hero = ({scrollIntoViewOffset}) => {
         <div className='icon git-icon' title='Git'>
           <img className='figma-img' src={GitIcon} alt="Figma icon" />
         </div>
-        <div className='icon cypress-icon' title='Cypress'>
-          <img className='cypress-img' src={CypressIcon} alt="Cypress icon" />
+        <div className='icon typescript-icon' title='Typescript'>
+          <img className='typescript-img' src={TypescriptIcon} alt="Typescript icon" />
         </div>
       </div>
       <div className='hero-recent-work-container'>
