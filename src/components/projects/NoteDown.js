@@ -7,7 +7,7 @@ const NoteDown = ({ setShowModal, setModalNum }) => {
   return (
     <div className='card notedown-card'>
       <h2 className='project-title'>NoteDown</h2>
-      <p className='project-slogan'>Where Ideas Flourish and Notes Transform.</p>
+      <p className='project-slogan'>Where ideas flourish and notes transform.</p>
       <div className='links-container'>
         <a
           className='visit-website-link'
