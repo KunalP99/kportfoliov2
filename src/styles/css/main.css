@@ -688,10 +688,10 @@ header .action-btn:hover {
   color: white;
 }
 .hoodies-card .links-container .visit-website-link {
-  color: #ADA6A6;
+  color: #ada6a6;
 }
 .hoodies-card .links-container .github-link {
-  color: #FFF;
+  color: #fff;
 }
 .hoodies-card .links-container button {
   color: white;
@@ -741,6 +741,7 @@ header .action-btn:hover {
   .hoodies-card .hoodies-img {
     width: 420px;
     right: 30px;
+    bottom: -30px;
   }
 }
 @keyframes skew {
