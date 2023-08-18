@@ -34,13 +34,15 @@ header {
       gap: $spacing-32;
     }
 
-    button, .cv-btn {
+    button,
+    .cv-btn {
       background: transparent;
       border: none;
       color: white;
       font-size: pxToRem(16px);
     }
-    button:hover, .cv-btn:hover {
+    button:hover,
+    .cv-btn:hover {
       color: rgb(194, 194, 194);
     }
   }
@@ -64,7 +66,7 @@ header {
   header {
     nav {
       flex-direction: column;
-      align-items:  flex-start;
+      align-items: flex-start;
       justify-content: center;
 
       .navbar-links {
@@ -87,10 +89,11 @@ header {
         align-items: flex-start;
         gap: $spacing-56;
       }
-      button, .cv-btn {
+      button,
+      .cv-btn {
         font-size: clamp(pxToRem(16px), 5vw, pxToRem(30px));
       }
-      
+
       .hamburger {
         position: absolute;
         right: 16px;
@@ -110,7 +113,13 @@ header {
   }
 }
 
-@media (max-width:350px) {
+@media (max-width: 370px) {
+  header {
+    width: 370px;
+  }
+}
+
+@media (max-width: 350px) {
   header {
     nav {
       ul {

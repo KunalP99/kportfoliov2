@@ -20,12 +20,19 @@ html {
       font-weight: $regular;
       line-height: 38px;
       span {
-        color: #6BA6FF
+        color: #6ba6ff;
       }
     }
   }
 }
 
+@media (max-width: 370px) {
+  .container {
+    .content {
+      width: 370px;
+    }
+  }
+}
 
 @media (max-width: 1890px) {
   .container {
@@ -74,4 +81,3 @@ html {
     }
   }
 }
-

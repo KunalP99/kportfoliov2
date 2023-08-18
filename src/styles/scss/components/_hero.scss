@@ -117,11 +117,10 @@
 
 @media (max-width: 370px) {
   .hero-container {
-    font-size: pxToRem(20px);
-    width: auto;
-    .icon {
-      display: none;
-    }
+    width: 370px;
+  }
+  .hero-recent-work-container {
+    width: 370px;
   }
 }
 

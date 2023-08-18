@@ -42,7 +42,7 @@ footer {
 @media (min-width: 1000px) {
   footer {
     margin-top: $spacing-120;
-    
+
     .back-to-top {
       margin-bottom: $spacing-56;
       img {
@@ -60,5 +60,11 @@ footer {
         width: auto;
       }
     }
+  }
+}
+
+@media (max-width: 370px) {
+  footer {
+    width: 370px;
   }
 }

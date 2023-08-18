@@ -71,9 +71,14 @@ html {
   line-height: 38px;
 }
 .container .content .quote span {
-  color: #6BA6FF;
+  color: #6ba6ff;
 }
 
+@media (max-width: 370px) {
+  .container .content {
+    width: 370px;
+  }
+}
 @media (max-width: 1890px) {
   .container {
     width: auto;
@@ -139,13 +144,15 @@ header nav ul {
   align-items: center;
   gap: 32px;
 }
-header nav button, header nav .cv-btn {
+header nav button,
+header nav .cv-btn {
   background: transparent;
   border: none;
   color: white;
   font-size: 1rem;
 }
-header nav button:hover, header nav .cv-btn:hover {
+header nav button:hover,
+header nav .cv-btn:hover {
   color: rgb(194, 194, 194);
 }
 header .action-btn {
@@ -187,7 +194,8 @@ header .action-btn:hover {
     align-items: flex-start;
     gap: 56px;
   }
-  header nav button, header nav .cv-btn {
+  header nav button,
+  header nav .cv-btn {
     font-size: clamp(1rem, 5vw, 1.875rem);
   }
   header nav .hamburger {
@@ -203,6 +211,11 @@ header .action-btn:hover {
   header .action-btn {
     font-size: clamp(1rem, 3vw, 1.875rem);
     padding: 8px 16px;
+  }
+}
+@media (max-width: 370px) {
+  header {
+    width: 370px;
   }
 }
 @media (max-width: 350px) {
@@ -319,11 +332,10 @@ header .action-btn:hover {
 
 @media (max-width: 370px) {
   .hero-container {
-    font-size: 1.25rem;
-    width: auto;
+    width: 370px;
   }
-  .hero-container .icon {
-    display: none;
+  .hero-recent-work-container {
+    width: 370px;
   }
 }
 @media (min-width: 500px) {
@@ -1270,5 +1282,10 @@ footer .social-links-container img {
   }
   footer .social-links-container img {
     width: auto;
+  }
+}
+@media (max-width: 370px) {
+  footer {
+    width: 370px;
   }
 }
