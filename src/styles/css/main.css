@@ -832,6 +832,48 @@ header .action-btn:hover {
   transition: width 300ms ease-in-out;
 }
 
+.notedown-card {
+  background: #fff8f1;
+}
+.notedown-card h2,
+.notedown-card p {
+  color: #413f3d;
+}
+.notedown-card .links-container .visit-website-link {
+  color: #dbad81;
+}
+.notedown-card .links-container a,
+.notedown-card .links-container button {
+  color: #413f3d;
+}
+.notedown-card .notedown-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  width: 80%;
+  transition: width 300ms ease-in-out;
+}
+
+@media (min-width: 700px) {
+  .notedown-card .notedown-img {
+    width: 60%;
+  }
+}
+@media (min-width: 1000px) {
+  .notedown-card .notedown-img {
+    width: 70%;
+  }
+}
+@media (min-width: 1600px) {
+  .notedown-card .notedown-img {
+    width: 60%;
+  }
+}
+@media (min-width: 1900px) {
+  .notedown-card .notedown-img {
+    max-width: 600px;
+  }
+}
 .projects-grid-container {
   display: grid;
   grid-template-columns: 100%;
@@ -873,7 +915,8 @@ header .action-btn:hover {
   font-size: clamp(0.9375rem, 2vw, 1.875rem);
   padding: 0px 40px;
 }
-.projects-grid-container .project-title, .projects-grid-container .project-slogan {
+.projects-grid-container .project-title,
+.projects-grid-container .project-slogan {
   text-align: center;
 }
 

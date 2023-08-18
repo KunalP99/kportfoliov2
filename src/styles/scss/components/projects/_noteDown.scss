@@ -1,0 +1,59 @@
+.notedown-card {
+  background: #fff8f1;
+
+  h2,
+  p {
+    color: #413f3d;
+  }
+
+  .links-container {
+    .visit-website-link {
+      color: #dbad81;
+    }
+
+    a,
+    button {
+      color: #413f3d;
+    }
+  }
+
+  .notedown-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 80%;
+    transition: width 300ms ease-in-out;
+  }
+}
+
+@media (min-width: 700px) {
+  .notedown-card {
+    .notedown-img {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .notedown-card {
+    .notedown-img {
+      width: 70%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .notedown-card {
+    .notedown-img {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .notedown-card {
+    .notedown-img {
+      max-width: 600px;
+    }
+  }
+}
