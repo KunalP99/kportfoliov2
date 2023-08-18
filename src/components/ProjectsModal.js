@@ -11,7 +11,7 @@ const ProjectsModal = ({info, setShowModal}) => {
     <div className="modal-container">
       <div className="modal" style={!darkTheme ? {backgroundColor: '#1A1A1A'} : {backgroundColor: '#fff'}}>
         <button className='x-btn' onClick={() => setShowModal(false)}><img src={darkTheme ? blackXicon : whiteXicon} alt="Close modal" /></button>
-        <a href={info.link} target='_blank' rel="noreferrer" style={!darkTheme ? {color: '#FFFFFF'} : {color: '#000000'}}><h2>{info.title}</h2></a>
+        <h2 style={!darkTheme ? {color: '#FFFFFF'} : {color: '#000000'}}>{info.title}</h2>
         <div className='tech-stack-container'>
           {info.skills.map((skill, index) => {
             return <div className='skill-container' style={{backgroundColor: `${skill.tagColour}`}} key={index}><p style={{color: `${skill.colour}`}}>{skill.name}</p></div>;

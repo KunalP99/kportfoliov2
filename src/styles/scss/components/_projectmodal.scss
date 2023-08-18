@@ -18,23 +18,19 @@
       width: 20px;
     }
   }
-  
-  .modal {  
+
+  .modal {
     position: fixed;
     background-color: white;
     width: 100vw;
     height: 100vh;
     z-index: 106;
     overflow: auto;
-    
-    a {
-      text-decoration: none;
 
-      h2 {
-        padding: $spacing-24 $spacing-24 0px $spacing-24;
-        font-size: clamp(pxToRem(22px), 6vw, pxToRem(54px));
-        font-weight: $semi-bold;
-      }
+    h2 {
+      padding: $spacing-24 $spacing-24 0px $spacing-24;
+      font-size: clamp(pxToRem(22px), 6vw, pxToRem(54px));
+      font-weight: $semi-bold;
     }
 
     .tech-stack-container {
@@ -73,7 +69,7 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: $spacing-32;
-        width: 80vw; 
+        width: 80vw;
         height: auto;
       }
 
@@ -83,7 +79,8 @@
         font-weight: $medium;
       }
 
-      p, li {
+      p,
+      li {
         font-size: clamp(pxToRem(16px), 4vw, pxToRem(25px));
         line-height: $line-height;
       }
@@ -94,7 +91,8 @@
         list-style-position: outside;
       }
 
-      .summary-container, .learned-container {
+      .summary-container,
+      .learned-container {
         margin: $spacing-32 0px;
       }
 
@@ -113,22 +111,20 @@
 @media (min-width: 1000px) {
   .modal-container {
     .modal {
-        max-width: 1200px;
-        height: 100vh;
-        top: 50%; 
-        left: 50%;
-        transform: translate(-50%, -50%);
+      max-width: 1200px;
+      height: 100vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
 
       .x-btn {
-          img {
-            width: 40px;
-          }
+        img {
+          width: 40px;
         }
+      }
 
-      a {
-        h2 {
-          padding: $spacing-56 $spacing-56 0px $spacing-56;
-        }
+      h2 {
+        padding: $spacing-56 $spacing-56 0px $spacing-56;
       }
 
       .tech-stack-container {
@@ -139,7 +135,7 @@
       .skill-container {
         padding: $spacing-08 $spacing-16;
       }
-        
+
       .modal-content-container {
         padding: 0px;
 
@@ -156,7 +152,6 @@
         .learned-container {
           margin: $spacing-56 0px;
         }
-        
 
         .modal-left-container {
           padding: $spacing-08 $spacing-56;
@@ -186,4 +181,3 @@
     }
   }
 }
-
