@@ -15,19 +15,32 @@ import AboutImg6 from '../images/about/about-img-6.jpg';
 import AboutImg7 from '../images/about/about-img-7.jpg';
 import AboutImg8 from '../images/about/about-img-8.jpg';
 
-// Video 
+// Video
 import AboutVid1 from '../images/about/about-vid-1.mp4';
 import AboutVid2 from '../images/about/about-vid-2.mp4';
 
-
 const About = () => {
   return (
-    <section id='about' className="about-container">
+    <section id='about' className='about-container'>
       <h2>About Me</h2>
-      <p>Upon completing my degree in Computer Science from Brunel University, I discovered a keen interest in Web Development. I was fascinated by the challenge of building user-friendly and visually appealing websites.</p>
-      <p>After several months of dedicated study, I started my first position as a freelance Frontend Developer at On1 Solutions. During my time there, I successfully applied my knowledge to develop a complete website.</p>
-      <p>Motivated to expand my skillset, I embarked on learning React and more recently, I have been exploring Express and MongoDB.</p>
-      <p>Dedicated to this craft, I am excited to continue on this journey and see what more this field has to offer.</p>
+      <p>
+        Upon completing my degree in Computer Science from Brunel University, I
+        discovered a keen interest in Web Development. I was fascinated by the
+        challenge of building user-friendly and visually appealing websites.
+      </p>
+      <p>
+        After several months of dedicated study, I started my first position as
+        a freelance Frontend Developer at On1 Solutions. During my time there, I
+        successfully applied my knowledge to develop a complete website.
+      </p>
+      <p>
+        Motivated to expand my skillset, I embarked on learning React and more
+        recently, I have been exploring Jest, Next.js and MongoDB.
+      </p>
+      <p>
+        Dedicated to this craft, I am excited to continue on this journey and
+        see what more this field has to offer.
+      </p>
 
       {/* Creates an infinite slider with autoplay  */}
       <Swiper
@@ -36,16 +49,16 @@ const About = () => {
         slidesPerView={1.8}
         speed={15000}
         simulateTouch={false}
-        breakpoints= {{
+        breakpoints={{
           700: {
-            slidesPerView: 2
+            slidesPerView: 2,
           },
           1000: {
-            slidesPerView: 2.8
+            slidesPerView: 2.8,
           },
           1500: {
-            slidesPerView: 3.8
-          }
+            slidesPerView: 3.8,
+          },
         }}
         autoplay={{
           delay: 1,
@@ -53,8 +66,7 @@ const About = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="about-swiper"
-        
+        className='about-swiper'
       >
         <SwiperSlide>
           <img src={AboutImg1} />
