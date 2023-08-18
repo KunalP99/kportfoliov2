@@ -220,7 +220,8 @@ header .action-btn:hover {
   margin-left: auto;
   margin-right: auto;
 }
-.hero-container .hero-name, .hero-container .hero-role {
+.hero-container .hero-name,
+.hero-container .hero-role {
   font-family: "Michroma", sans-serif;
 }
 .hero-container .hero-name {
@@ -280,8 +281,8 @@ header .action-btn:hover {
   z-index: 2;
   animation: float-small-screen 4s ease-in-out 0s infinite forwards;
 }
-.hero-container .git-icon {
-  background: linear-gradient(44.58deg, rgba(255, 166, 150, 0.14) 7.05%, #F58B78 94.35%);
+.hero-container .jest-icon {
+  background: linear-gradient(45deg, rgba(193, 148, 148, 0.14) 0%, #C38697 100%);
   bottom: -25px;
   right: 75px;
   z-index: 4;
@@ -356,7 +357,7 @@ header .action-btn:hover {
     bottom: 25px;
     right: 175px;
   }
-  .hero-container .git-icon {
+  .hero-container .jest-icon {
     bottom: -30px;
     right: 100px;
   }
@@ -401,7 +402,7 @@ header .action-btn:hover {
     right: 250px;
     animation: float 4s ease-in-out 0s infinite forwards;
   }
-  .hero-container .git-icon {
+  .hero-container .jest-icon {
     bottom: -45px;
     right: 150px;
     animation: float 4s ease-in-out 0.8s infinite forwards;
@@ -444,7 +445,7 @@ header .action-btn:hover {
     bottom: 55px;
     right: 440px;
   }
-  .hero-container .git-icon {
+  .hero-container .jest-icon {
     bottom: -70px;
     right: 270px;
   }
@@ -492,7 +493,7 @@ header .action-btn:hover {
     bottom: 80px;
     right: 610px;
   }
-  .hero-container .git-icon {
+  .hero-container .jest-icon {
     bottom: -90px;
     right: 380px;
   }

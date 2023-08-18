@@ -8,15 +8,15 @@
   margin-left: auto;
   margin-right: auto;
 
-  .hero-name, .hero-role {
+  .hero-name,
+  .hero-role {
     font-family: $hero-font-family;
   }
-  
+
   .hero-name {
     position: relative;
     margin-bottom: $spacing-08;
     z-index: 1;
-
   }
   .hero-role {
     position: relative;
@@ -34,7 +34,7 @@
     }
   }
 
-  // Icon backgrounds & positioning  
+  // Icon backgrounds & positioning
   .html-icon {
     background: $html-bg-colour;
     bottom: 25px;
@@ -75,8 +75,8 @@
     animation: float-small-screen 4s ease-in-out 0s infinite forwards;
   }
 
-  .git-icon {
-    background: $git-bg-colour;
+  .jest-icon {
+    background: $jest-bg-colour;
     bottom: -25px;
     right: 75px;
     z-index: 4;
@@ -103,7 +103,7 @@
     background: transparent;
     border: none;
     transition: transform 300ms ease-in-out;
-  }  
+  }
   button:hover {
     transform: translateY(7px);
   }
@@ -163,7 +163,7 @@
       right: 175px;
     }
 
-    .git-icon {
+    .jest-icon {
       bottom: -30px;
       right: 100px;
     }
@@ -218,7 +218,7 @@
       animation: float 4s ease-in-out 0s infinite forwards;
     }
 
-    .git-icon {
+    .jest-icon {
       bottom: -45px;
       right: 150px;
       animation: float 4s ease-in-out 0.8s infinite forwards;
@@ -252,7 +252,7 @@
 
     .css-icon {
       bottom: -70px;
-      left: 210px
+      left: 210px;
     }
 
     .js-icon {
@@ -270,7 +270,7 @@
       right: 440px;
     }
 
-    .git-icon {
+    .jest-icon {
       bottom: -70px;
       right: 270px;
     }
@@ -329,7 +329,7 @@
       right: 610px;
     }
 
-    .git-icon {
+    .jest-icon {
       bottom: -90px;
       right: 380px;
     }
