@@ -13,10 +13,10 @@ const ProjectsGrid = () => {
   return (
     <div>
       <section className='projects-grid-container' id='projects'>
+        <On1Solutions setShowModal={setShowModal} setModalNum={setModalNum} />
         <NoteDown setShowModal={setShowModal} setModalNum={setModalNum} />
         <GamesInventory setShowModal={setShowModal} setModalNum={setModalNum} />
         <Hoodies setShowModal={setShowModal} setModalNum={setModalNum} />
-        <On1Solutions setShowModal={setShowModal} setModalNum={setModalNum} />
       </section>
       {showModal && (
         <ProjectsModal
