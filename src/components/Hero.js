@@ -1,11 +1,11 @@
-import HtmlIcon from '../images/hero/html-icon.png';
-import CssIcon from '../images/hero/css-icon.png';
-import JsIcon from '../images/hero/js-icon.png';
-import SassIcon from '../images/hero/sass-icon.png';
-import ReactIcon from '../images/hero/react-icon.png';
-import JestIcon from '../images/hero/jest-icon.png';
-import TypescriptIcon from '../images/hero/typescript-icon.png';
-import ArrowDown from '../images/hero/down-arrow.svg';
+import HtmlIcon from '../images/devicons/html-icon.png';
+import CssIcon from '../images/devicons/css-icon.png';
+import JsIcon from '../images/devicons/js-icon.png';
+import SassIcon from '../images/devicons/sass-icon.png';
+import ReactIcon from '../images/devicons/react-icon.png';
+import JestIcon from '../images/devicons/jest-icon.png';
+import TypescriptIcon from '../images/devicons/typescript-icon.png';
+import ArrowDown from '../images/devicons/down-arrow.svg';
 
 const Hero = ({ scrollIntoViewOffset }) => {
   return (
@@ -32,7 +32,10 @@ const Hero = ({ scrollIntoViewOffset }) => {
           <img className='jest-img' src={JestIcon} alt='Jest icon' />
         </div>
         <div className='icon typescript-icon' title='Typescript'>
-          <img className='typescript-img' src={TypescriptIcon} alt='Typescript icon'
+          <img
+            className='typescript-img'
+            src={TypescriptIcon}
+            alt='Typescript icon'
           />
         </div>
       </div>

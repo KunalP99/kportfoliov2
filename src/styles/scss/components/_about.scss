@@ -73,6 +73,7 @@
   .about-container {
     > h2 {
       padding-left: $spacing-120;
+      margin-bottom: $spacing-24;
     }
 
     ul {
@@ -83,6 +84,8 @@
 
 @media (min-width: 1200px) {
   .about-container {
+    margin-top: $spacing-120;
+
     > p {
       line-height: $line-height;
     }
