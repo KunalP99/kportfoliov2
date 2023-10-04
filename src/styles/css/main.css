@@ -974,6 +974,82 @@ header .action-btn:hover {
     grid-template-columns: 1200px 1200px;
   }
 }
+.skills-container {
+  margin-top: 40px;
+}
+.skills-container h2 {
+  font-size: clamp(1.875rem, 3vw, 3.75rem);
+  font-weight: 600;
+  margin-bottom: 24px;
+  padding: 0px 40px;
+  text-align: center;
+}
+.skills-container .skills-icon-container {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 24px;
+}
+.skills-container .skills-icon-container .skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.skills-container .skills-icon-container .skill-container img {
+  width: 50px;
+}
+.skills-container .skills-icon-container .skill-container p {
+  font-size: clamp(0.625rem, 3vw, 1.6875rem);
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 500px) {
+  .skills-container .skills-icon-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 700px) {
+  .skills-container .skills-icon-container {
+    padding: 0 112px;
+  }
+}
+@media (min-width: 1000px) {
+  .skills-container .skills-icon-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+    padding: 0 120px;
+  }
+  .skills-container .skills-icon-container .skill-container img {
+    width: 74px;
+  }
+}
+@media (min-width: 1200px) {
+  .skills-container {
+    margin-top: 120px;
+  }
+  .skills-container .skills-icon-container {
+    padding: 0 150px;
+  }
+}
+@media (min-width: 1600px) {
+  .skills-container .skills-icon-container {
+    gap: 100px;
+    padding: 0 280px;
+    margin-top: 56px;
+  }
+}
+@media (min-width: 2300px) {
+  .skills-container .skills-icon-container {
+    padding: 0 330px;
+  }
+}
 .interests-container {
   display: flex;
   justify-content: center;
@@ -1010,17 +1086,21 @@ header .action-btn:hover {
   font-size: clamp(1.875rem, 3vw, 3.75rem);
   font-weight: 600;
   margin-bottom: 16px;
+  padding: 0px 40px;
 }
-.about-container > p {
+.about-container ul {
   font-size: clamp(0.9375rem, 2vw, 1.875rem);
   line-height: 33px;
+  padding: 0px 60px;
+  margin-top: 24px;
+  list-style-type: square;
 }
-.about-container > h2, .about-container > p {
-  padding: 0px 40px;
+.about-container ul li:not(:last-child) {
+  margin-bottom: 30px;
 }
 .about-container .about-swiper {
   width: 100%;
-  padding-top: 50px;
+  margin-top: 40px;
 }
 .about-container .swiper-slide {
   background-position: center;
@@ -1030,7 +1110,8 @@ header .action-btn:hover {
   margin-right: 8px;
   margin-left: 8px;
 }
-.about-container .swiper-slide img, .about-container video {
+.about-container .swiper-slide img,
+.about-container video {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
@@ -1041,40 +1122,71 @@ header .action-btn:hover {
   transition-timing-function: linear;
 }
 
-.about-container p:nth-child(n+2) {
-  margin-bottom: 40px;
-}
-
 @media (min-width: 700px) {
-  .about-container > h2, .about-container > p {
+  .about-container > h2 {
     padding-left: 112px;
   }
-  .about-container .swiper-slide img, .about-container video {
+  .about-container ul {
+    padding-left: 130px;
+  }
+  .about-container .swiper-slide img,
+  .about-container video {
     height: 600px;
   }
 }
 @media (min-width: 1000px) {
-  .about-container > h2, .about-container > p {
+  .about-container > h2 {
     padding-left: 120px;
+    margin-bottom: 24px;
+  }
+  .about-container ul {
+    padding-left: 140px;
   }
 }
 @media (min-width: 1200px) {
+  .about-container {
+    margin-top: 120px;
+  }
   .about-container > p {
     line-height: 45px;
   }
-  .about-container > h2, .about-container > p {
+  .about-container > h2 {
     padding-left: 150px;
+  }
+  .about-container ul {
+    padding-left: 175px;
+    margin-top: 32px;
+  }
+  .about-container ul li:not(:last-child) {
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 1600px) {
   .about-container {
     margin-top: 120px;
   }
-  .about-container > p {
-    padding-right: 250px;
-  }
-  .about-container > h2, .about-container > p {
+  .about-container > h2 {
     padding-left: 250px;
+  }
+  .about-container ul {
+    padding-left: 280px;
+    padding-right: 280px;
+    margin-top: 56px;
+  }
+  .about-container .about-swiper {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 2300px) {
+  .about-container ul {
+    padding-right: 500px;
+  }
+  .about-container ul > li {
+    line-height: 137%;
+  }
+  .about-container .swiper-slide img,
+  .about-container video {
+    height: 900px;
   }
 }
 .modal-container {
