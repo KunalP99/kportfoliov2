@@ -980,7 +980,7 @@ header .action-btn:hover {
 .skills-container h2 {
   font-size: clamp(1.875rem, 3vw, 3.75rem);
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   padding: 0px 40px;
   text-align: center;
 }
@@ -1019,9 +1019,6 @@ header .action-btn:hover {
   }
 }
 @media (min-width: 1000px) {
-  .skills-container h2 {
-    margin-bottom: 24px;
-  }
   .skills-container .skills-icon-container {
     display: flex;
     justify-content: center;
