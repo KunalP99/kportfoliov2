@@ -11,7 +11,6 @@ import AboutImg2 from '../images/about/about-img-2.jpg';
 import AboutImg3 from '../images/about/about-img-3.jpg';
 import AboutImg4 from '../images/about/about-img-4.jpg';
 import AboutImg5 from '../images/about/about-img-5.jpg';
-import AboutImg6 from '../images/about/about-img-6.jpg';
 
 // Video
 import AboutVid1 from '../images/about/about-vid-1.mp4';
@@ -84,9 +83,6 @@ const About = () => {
         </SwiperSlide>
         <SwiperSlide>
           <video src={AboutVid2} autoPlay={true} loop={true} muted />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={AboutImg6} />
         </SwiperSlide>
       </Swiper>
       <Interests />

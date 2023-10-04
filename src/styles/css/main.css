@@ -1008,11 +1008,6 @@ header .action-btn:hover {
   text-transform: uppercase;
 }
 
-@media (min-width: 500px) {
-  .skills-container .skills-icon-container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 @media (min-width: 700px) {
   .skills-container .skills-icon-container {
     padding: 0 112px;
@@ -1050,6 +1045,13 @@ header .action-btn:hover {
     padding: 0 330px;
   }
 }
+@font-face {
+  font-family: "Comico-Regular";
+  src: url("/public/fonts/Comico-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 .interests-container {
   display: flex;
   justify-content: center;
@@ -1060,8 +1062,13 @@ header .action-btn:hover {
 .interests-container > p {
   font-size: clamp(1.875rem, 10vw, 12.5rem);
 }
-.interests-container img {
+.interests-container .icon-container img {
   width: 100px;
+}
+.interests-container .icon-container .interests-name {
+  font-family: "Comico-Regular";
+  font-size: clamp(1rem, 3vw, 1.75rem);
+  text-align: center;
 }
 
 @media (min-width: 900px) {
@@ -1069,7 +1076,7 @@ header .action-btn:hover {
     margin: 120px 0;
     gap: 32px;
   }
-  .interests-container img {
+  .interests-container .icon-container img {
     width: 200px;
   }
 }
