@@ -94,6 +94,10 @@ header {
         font-size: clamp(pxToRem(16px), 5vw, pxToRem(30px));
       }
 
+      .cv-btn {
+        padding: 1px 6px;
+      }
+
       .hamburger {
         position: absolute;
         right: 16px;

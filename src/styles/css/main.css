@@ -198,6 +198,9 @@ header .action-btn:hover {
   header nav .cv-btn {
     font-size: clamp(1rem, 5vw, 1.875rem);
   }
+  header nav .cv-btn {
+    padding: 1px 6px;
+  }
   header nav .hamburger {
     position: absolute;
     right: 16px;
