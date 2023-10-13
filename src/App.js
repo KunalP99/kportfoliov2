@@ -37,11 +37,11 @@ function App() {
         <div className='content'>
           <div className='quote'>
             <p>
-              <span>&quot;</span>I am a passionate web developer, with the
+              <span>&quot;</span>I&apos;m a passionate web developer, with the
               ability to create responsive, aesthetic websites using a range of
-              the latest tools and technologies. I am always seeking
-              opportunities to expand my skill set, and I thrive on the new and
-              exciting challenges that come with this field.<span>&quot;</span>
+              the latest tools and technologies. Dedicated to helping companies design, develop and
+              maintain their websites, making a positive and lasting impact.
+              <span>&quot;</span>
             </p>
           </div>
           <ProjectsGrid />

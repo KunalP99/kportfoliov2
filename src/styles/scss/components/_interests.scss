@@ -1,14 +1,30 @@
+@font-face {
+  font-family: 'Comico-Regular';
+  src: url('/public/fonts/Comico-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
 .interests-container {
   @include flex-center;
   gap: $spacing-16;
   margin: $spacing-56 0;
 
   > p {
-    font-size:clamp(pxToRem(30px), 10vw, pxToRem(200px));
+    font-size: clamp(pxToRem(30px), 10vw, pxToRem(200px));
   }
 
-  img {
-    width: 100px;
+  .icon-container {
+    img {
+      width: 100px;
+    }
+
+    .interests-name {
+      font-family: 'Comico-Regular';
+      font-size: clamp(pxToRem(16px), 3vw, pxToRem(28px));
+      text-align: center;
+    }
   }
 }
 
@@ -17,8 +33,10 @@
     margin: $spacing-120 0;
     gap: $spacing-32;
 
-    img {
-      width: 200px;
+    .icon-container {
+      img {
+        width: 200px;
+      }
     }
   }
 }
