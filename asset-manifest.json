@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/kportfoliov2/static/css/main.148eb461.css",
+    "main.css": "/kportfoliov2/static/css/main.97ae6d8d.css",
     "main.js": "/kportfoliov2/static/js/main.5fa5467f.js",
     "static/media/about-vid-1.mp4": "/kportfoliov2/static/media/about-vid-1.d2dbf95804aec991326f.mp4",
     "static/media/about-vid-2.mp4": "/kportfoliov2/static/media/about-vid-2.c79c0e30921994afc9ad.mp4",
@@ -46,11 +46,11 @@
     "static/media/black-x.svg": "/kportfoliov2/static/media/black-x.4192cf828572d7009df77e6736fb0c2b.svg",
     "static/media/white-x.svg": "/kportfoliov2/static/media/white-x.cd143161e72e40bf500fbc77b4ec0c42.svg",
     "static/media/hamburger.svg": "/kportfoliov2/static/media/hamburger.811db386351ef89d48d3180534d25d9e.svg",
-    "main.148eb461.css.map": "/kportfoliov2/static/css/main.148eb461.css.map",
+    "main.97ae6d8d.css.map": "/kportfoliov2/static/css/main.97ae6d8d.css.map",
     "main.5fa5467f.js.map": "/kportfoliov2/static/js/main.5fa5467f.js.map"
   },
   "entrypoints": [
-    "static/css/main.148eb461.css",
+    "static/css/main.97ae6d8d.css",
     "static/js/main.5fa5467f.js"
   ]
 }
